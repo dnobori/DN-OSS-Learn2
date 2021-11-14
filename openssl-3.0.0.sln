@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openssl-3.0.0", "openssl-3.0.0.vcxproj", "{9160D39B-E43D-412E-B1C5-EEE82FDE22CD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openssl-3.0.0", "openssl-3.0.0\openssl-3.0.0.vcxproj", "{9160D39B-E43D-412E-B1C5-EEE82FDE22CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +17,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {604634A3-BC10-4BA1-9419-A3B0CB42B53F}
+		SolutionGuid = {E345BC37-F9AC-40E2-9092-44472978D694}
 	EndGlobalSection
 EndGlobal
