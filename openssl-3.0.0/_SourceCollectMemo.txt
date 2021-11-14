@@ -1,0 +1,12 @@
+mkdir C:\git\DN-OSS-Learn2\openssl-3.0.0\src\
+
+xcopy /e /c /i /g /h /r /y \\crosswin\C\git\SE-Build-crosslib_win32_v2\OpenSSL\src\build\vc2017\x64_Debug\ C:\git\DN-OSS-Learn2\openssl-3.0.0\src\
+
+cd C:\git\DN-OSS-Learn2\openssl-3.0.0\src\
+
+del /q /s C:\git\DN-OSS-Learn2\openssl-3.0.0\src\*.obj
+
+del /q /s C:\git\DN-OSS-Learn2\openssl-3.0.0\src\*.exe
+
+del /q /s C:\git\DN-OSS-Learn2\openssl-3.0.0\src\*.lib
+
