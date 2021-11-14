@@ -1,0 +1,141 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <_DotnetApiDocsPackageName>Microsoft.Private.Intellisense</_DotnetApiDocsPackageName>
+    <_DotnetApiDocsFilesRoot>$([MSBuild]::NormalizeDirectory('$(NuGetPackageRoot)', '$(_DotnetApiDocsPackageName)', '$(MicrosoftPrivateIntellisenseVersion)', 'IntellisenseFiles', 'windowsdesktop'))</_DotnetApiDocsFilesRoot>
+    <_IntellisenseXmlDir>$([MSBuild]::NormalizeDirectory('$(ArtifactsBinDir)', 'docs'))</_IntellisenseXmlDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageDownload Include="Microsoft.Private.Intellisense" Version="[$(MicrosoftPrivateIntellisenseVersion)]" />
+  </ItemGroup>
+
+ <!--
+    ============================================================
+                      GetDocFiles
+    Restore intellisense xml files from the centrally managed NuGet package that originates from https://github.com/dotnet/dotnet-api-docs.
+    This packages is published to 'dotnet6-transport' feed.
+
+    Note: The intellisense package doesn't use NuGet conventions so we need to select manually.
+    ============================================================
+    -->
+  <Target Name="GetDocFiles"
+          AfterTargets="Restore">
+
+    <ItemGroup>
+      <DocFile Include="$(_DotnetApiDocsFilesRoot)**\*.xml"/>
+      <DocFile>
+        <!-- trim off slash since it differs by platform and we need to do a string compare -->
+        <LCID>$([System.String]::new('%(RecursiveDir)').TrimEnd('\/'))</LCID>
+      </DocFile>
+      <DocFile>
+        <!-- map LCID to culture name that VS expects -->
+        <Culture>unknown</Culture>
+        <Culture Condition="'%(LCID)' == '1028'">zh-hant/</Culture>
+        <Culture Condition="'%(LCID)' == '1031'">de/</Culture>
+        <!-- english is placed in the root -->
+        <Culture Condition="'%(LCID)' == '1033'"></Culture>
+        <Culture Condition="'%(LCID)' == '1036'">fr/</Culture>
+        <Culture Condition="'%(LCID)' == '1040'">it/</Culture>
+        <Culture Condition="'%(LCID)' == '1041'">ja/</Culture>
+        <Culture Condition="'%(LCID)' == '1042'">ko/</Culture>
+        <Culture Condition="'%(LCID)' == '1049'">ru/</Culture>
+        <Culture Condition="'%(LCID)' == '2052'">zh-hans/</Culture>
+        <Culture Condition="'%(LCID)' == '3082'">es/</Culture>
+      </DocFile>
+      <DocFile>
+        <SubFolder>%(Culture)/</SubFolder>
+      </DocFile>
+    </ItemGroup>
+
+    <Error Condition="'%(DocFile.Culture)' == 'unknown'" Text="Unknown language folder '%(LCID)' for doc files '@(DocFile)'" />
+    
+    <Copy SourceFiles="@(DocFile)"
+          DestinationFiles="$(_IntellisenseXmlDir)\%(SubFolder)%(FileName)%(Extension)"
+          SkipUnchangedFiles="true"
+          UseHardlinksIfPossible="true" />
+
+  </Target>
+
+  <!--
+    ============================================================
+                      GetPackageContent
+    Selects all artifacts that we package for customers
+    ============================================================
+    -->
+  <Target Name="GetPackageContent"
+          DependsOnTargets="SatelliteDllsProjectOutputGroup"
+          Returns="@(PackageFile)">
+
+    <PropertyGroup>
+      <RefPackagePath Condition="'$(RefPackagePath)' == ''">ref/$(TargetFramework)</RefPackagePath>
+      <IncludePdbInPackage Condition="'$(IncludePdbInPackage)' == '' AND '$(IsFacadeAssembly)' != 'true' AND '$(DebugType)' != 'embedded'">true</IncludePdbInPackage>
+      <IncludeResourcesInPackage>true</IncludeResourcesInPackage>
+    </PropertyGroup>
+
+    <!-- Analyzers and source generators -->
+    <PropertyGroup Condition="'$(IsAnalyzerProject)' == 'true'">
+      <_AnalyzerTargetLanguage>$(AssemblyName.Substring($(AssemblyName.LastIndexOf('.'))))</_AnalyzerTargetLanguage>
+      <AnalyzerTargetLanguage Condition="$(_AnalyzerTargetLanguage.Contains('.CSharp', StringComparison.OrdinalIgnoreCase))">/cs</AnalyzerTargetLanguage>
+      <AnalyzerTargetLanguage Condition="$(_AnalyzerTargetLanguage.Contains('.VisualBasic', StringComparison.OrdinalIgnoreCase))">/vb</AnalyzerTargetLanguage>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(PackagePath)' == ''">
+      <PackagePath>lib/$(TargetFramework)</PackagePath>
+      <PackagePath Condition="'$(IsFacadeAssembly)' == 'true'">lib/$(TargetFramework);$(RefPackagePath)</PackagePath>
+      <!-- Note that we are packaging analyzers not for consumption, but for transport purposes into dotnet/windowsdesktop -->
+      <PackagePath Condition="'$(IsAnalyzerProject)' == 'true'">sdk/analyzers/dotnet$(AnalyzerTargetLanguage)</PackagePath>
+    </PropertyGroup>
+
+    <PropertyGroup>
+      <IntellisenseXmlFileSource>$(_IntellisenseXmlDir)$(AssemblyName).xml</IntellisenseXmlFileSource>
+
+      <!-- Set the xml destination (for a later step that copies files from the $(_DotnetApiDocsPackageName) package to local build artifacts) -->
+      <IntellisenseXmlDest Condition="'$(ProduceReferenceAssembly)' == 'true' And '$(PackageAsRefAndLib)' != 'true'" >$([System.IO.Path]::ChangeExtension('$(TargetRefPath)', '.xml'))</IntellisenseXmlDest>
+      <IntellisenseXmlDest Condition="'$(PackageAsRefAndLib)' == 'true'" >$([System.IO.Path]::ChangeExtension('$(TargetPath)', '.xml'))</IntellisenseXmlDest>
+      <IntellisenseXmlDestDir Condition="'$(IntellisenseXmlDest)' != ''">$([System.IO.Path]::GetDirectoryName('$(IntellisenseXmlDest)'))</IntellisenseXmlDestDir>
+
+    </PropertyGroup>
+
+    <!-- 
+      If this file does NOT exist, and the assembly is NOT a facade assembly, this is an error. 
+      This means we build a real assembly that has no associated official intellisense docs.
+      Contact the intellisense team for guidance.
+    -->
+    <Error  Condition="!Exists('$(IntellisenseXmlFileSource)') and '$(IsFacadeAssembly)' != 'true' and '$(IsAnalyzerProject)' != 'true'" 
+            Text="$(AssemblyName).xml was not found in $(_DotnetApiDocsPackageName) package. Contact the intellisense team about adding the docs for this assembly."
+    />
+
+    <ItemGroup>
+      <PackageFile Include="$(TargetPath)" PackagePath="$(PackagePath)" />
+      <PackageFile Condition="'$(IncludePdbInPackage)' == 'true'" Include="$(TargetDir)$(TargetName).pdb" PackagePath="$(PackagePath)" />
+      <PackageFile Condition="'$(ProduceReferenceAssembly)' == 'true'" Include="$(TargetRefPath)" PackagePath="$(RefPackagePath)" />
+      <PackageFile Condition="'$(ProduceReferenceAssembly)' == 'true' Or '$(PackageAsRefAndLib)' == 'true'"
+                   Include="$(IntellisenseXmlFileSource)"
+                   PackagePath="$(RefPackagePath)" />
+      <PackageFile Condition="'$(PackageAsRefAndLib)' == 'true'" Include="$(TargetPath)" PackagePath="$(RefPackagePath)" />
+      <PackageFile Condition="'$(IncludeResourcesInPackage)' == 'true'"
+                   Include="@(SatelliteDllsProjectOutputGroupOutput->'%(FinalOutputPath)')"
+                   PackagePath="$(PackagePath)/%(SatelliteDllsProjectOutputGroupOutput.Culture)" />
+    </ItemGroup>
+  </Target>
+
+  <!-- xml files can be added here for intellisense -->
+  <Target Name="CopyIntellisenseXmlsToTargetRefPath"
+          AfterTargets="Build"
+          Inputs="$(IntellisenseXmlFileSource)"
+          Outputs="$(IntellisenseXmlDest)"
+          Condition="'$(ProduceReferenceAssembly)' == 'true' Or '$(PackageAsRefAndLib)' == 'true'">
+
+    <Message Condition="!Exists('$(IntellisenseXmlFileSource)')"
+             Text="$(IntellisenseXmlFileSource) is missing" />
+
+    <MakeDir Condition="!Exists('$(IntellisenseXmlDestDir)')"
+             Directories="$([System.IO.Path]::GetDirectoryName('$(IntellisenseXmlDest)'))" />
+
+    <Copy SourceFiles="$(IntellisenseXmlFileSource)"
+          Condition="Exists('$(IntellisenseXmlFileSource)')"
+          DestinationFiles="$(IntellisenseXmlDest)"
+          SkipUnchangedFiles="true" />
+  </Target>
+</Project>

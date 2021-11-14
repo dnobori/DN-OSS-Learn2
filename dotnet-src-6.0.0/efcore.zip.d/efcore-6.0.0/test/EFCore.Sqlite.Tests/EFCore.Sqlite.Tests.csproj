@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>Microsoft.EntityFrameworkCore.Sqlite.Tests</AssemblyName>
+    <RootNamespace>Microsoft.EntityFrameworkCore</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\EFCore.Sqlite.Core\EFCore.Sqlite.Core.csproj" />
+    <ProjectReference Include="..\EFCore.Relational.Tests\EFCore.Relational.Tests.csproj" />
+    <ProjectReference Include="..\EFCore.Sqlite.FunctionalTests\EFCore.Sqlite.FunctionalTests.csproj" />
+  </ItemGroup>
+
+</Project>

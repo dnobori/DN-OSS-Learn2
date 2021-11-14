@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>Microsoft.EntityFrameworkCore.Cosmos.Tests</AssemblyName>
+    <RootNamespace>Microsoft.EntityFrameworkCore.Cosmos</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EFCore.Cosmos.FunctionalTests\EFCore.Cosmos.FunctionalTests.csproj" />
+    <ProjectReference Include="..\EFCore.Tests\EFCore.Tests.csproj" />
+  </ItemGroup>
+
+</Project>

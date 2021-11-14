@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>Microsoft.EntityFrameworkCore.SqlServer.Tests</AssemblyName>
+    <RootNamespace>Microsoft.EntityFrameworkCore</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\EFCore.SqlServer\EFCore.SqlServer.csproj" />
+    <ProjectReference Include="..\EFCore.Relational.Tests\EFCore.Relational.Tests.csproj" />
+    <ProjectReference Include="..\EFCore.SqlServer.FunctionalTests\EFCore.SqlServer.FunctionalTests.csproj" />
+  </ItemGroup>
+
+</Project>

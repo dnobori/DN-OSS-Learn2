@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>Microsoft.EntityFrameworkCore.InMemory.Tests</AssemblyName>
+    <RootNamespace>Microsoft.EntityFrameworkCore</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\EFCore.InMemory\EFCore.InMemory.csproj" />
+    <ProjectReference Include="..\EFCore.InMemory.FunctionalTests\EFCore.InMemory.FunctionalTests.csproj" />
+    <ProjectReference Include="..\EFCore.Tests\EFCore.Tests.csproj" />
+  </ItemGroup>
+
+</Project>

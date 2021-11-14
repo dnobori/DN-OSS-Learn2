@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "runtime.zip.d", "dotnet-src-6.0.0\runtime.zip.d\runtime.zip.d.vcxproj", "{5E83C072-DD1F-4D01-BB58-D0D04863F94F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E83C072-DD1F-4D01-BB58-D0D04863F94F}.Debug|x86.ActiveCfg = Debug|Win32
+		{5E83C072-DD1F-4D01-BB58-D0D04863F94F}.Debug|x86.Build.0 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F658B349-AAF7-4606-ABF4-62769E34C4C2}
+	EndGlobalSection
+EndGlobal

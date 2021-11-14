@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MajorVersion>6</MajorVersion>
+    <MinorVersion>0</MinorVersion>
+    <PatchVersion>0</PatchVersion>
+    <PreReleaseVersionLabel>rtm</PreReleaseVersionLabel>
+    <PreReleaseVersionIteration>
+    </PreReleaseVersionIteration>
+    <!-- Enable to remove prerelease label. -->
+    <StabilizePackageVersion Condition="'$(StabilizePackageVersion)' == ''">true</StabilizePackageVersion>
+    <DotNetFinalVersionKind Condition="'$(StabilizePackageVersion)' == 'true'">release</DotNetFinalVersionKind>
+    <!-- Disable SemVer v2 until after 3.0.0. -->
+    <SemanticVersioningV1 Condition="&#xA;      $(MajorVersion) &lt; 3 or&#xA;      '$(MajorVersion).$(MinorVersion).$(PatchVersion)' == '3.0.0'">true</SemanticVersioningV1>
+    <!-- Blob storage container that has the "Latest" channel to publish to. -->
+    <ContainerName>dotnet</ContainerName>
+    <ChecksumContainerName>$(ContainerName)</ChecksumContainerName>
+    <!-- Max version of NETCoreApp, used by test projects. -->
+    <NETCoreAppMaximumVersion>6.0</NETCoreAppMaximumVersion>
+    <NETCoreAppFrameworkVersion>6.0</NETCoreAppFrameworkVersion>
+    <NETCoreAppFramework>net$(NETCoreAppFrameworkVersion)</NETCoreAppFramework>
+    <MicrosoftDotnetWinFormsProjectTemplatesVersion>6.0.0-rtm.21523.1</MicrosoftDotnetWinFormsProjectTemplatesVersion>
+    <MicrosoftDotNetWpfProjectTemplatesVersion>6.0.0-rtm.21523.1</MicrosoftDotNetWpfProjectTemplatesVersion>
+  </PropertyGroup>
+  <!--
+    Servicing build settings for setup packages. Instructions:
+
+    * To enable a package build for the current patch release, set PatchVersion to match the current
+      patch version of that package. ("major.minor.patch".) This is normally the same as
+      PatchVersion above.
+    * When the PatchVersion property above is incremented at the beginning of the next servicing
+      release, all packages listed below automatically stop building because the property no longer
+      matches the metadata. (Do not delete the items!)
+
+    If the PatchVersion below is never changed from '0', the package will build in the 'master'
+    branch, and during a forked RTM release ("X.Y.0"). It will stop building for "X.Y.1" unless
+    manually enabled by updating the metadata.
+  -->
+  <ItemGroup>
+    <ProjectServicingConfiguration Include="Microsoft.WindowsDesktop.App.Ref" PatchVersion="0" />
+  </ItemGroup>
+  <!--Package versions-->
+  <PropertyGroup>
+    <!-- arcade -->
+    <MicrosoftDotNetBuildTasksFeedVersion>6.0.0-beta.21519.3</MicrosoftDotNetBuildTasksFeedVersion>
+    <MicrosoftDotNetBuildTasksArchivesVersion>6.0.0-beta.21519.3</MicrosoftDotNetBuildTasksArchivesVersion>
+    <MicrosoftDotNetBuildTasksPackagingVersion>6.0.0-beta.21519.3</MicrosoftDotNetBuildTasksPackagingVersion>
+    <MicrosoftDotNetBuildTasksInstallersVersion>6.0.0-beta.21519.3</MicrosoftDotNetBuildTasksInstallersVersion>
+    <MicrosoftDotNetVersionToolsTasksVersion>6.0.0-beta.21519.3</MicrosoftDotNetVersionToolsTasksVersion>
+    <!-- runtime -->
+    <MicrosoftNETCoreAppRefVersion>6.0.0</MicrosoftNETCoreAppRefVersion>
+    <MicrosoftNETCoreAppRuntimewinx64Version>6.0.0</MicrosoftNETCoreAppRuntimewinx64Version>
+    <MicrosoftInternalRuntimeWindowsDesktopTransportVersion>6.0.0-rtm.21522.10</MicrosoftInternalRuntimeWindowsDesktopTransportVersion>
+    <VSRedistCommonNetCoreSharedFrameworkx6460PackageVersion>6.0.0-rtm.21522.10</VSRedistCommonNetCoreSharedFrameworkx6460PackageVersion>
+    <!-- winforms -->
+    <MicrosoftPrivateWinformsVersion>6.0.0-rtm.21523.1</MicrosoftPrivateWinformsVersion>
+    <!-- wpf -->
+    <MicrosoftDotNetWpfGitHubVersion>6.0.0-rtm.21523.1</MicrosoftDotNetWpfGitHubVersion>
+    <!-- Not auto-updated. -->
+    <MicrosoftBuildVersion>15.7.179</MicrosoftBuildVersion>
+    <MicrosoftBuildFrameworkVersion>$(MicrosoftBuildVersion)</MicrosoftBuildFrameworkVersion>
+    <MicrosoftBuildTasksCoreVersion>$(MicrosoftBuildVersion)</MicrosoftBuildTasksCoreVersion>
+    <MicrosoftBuildUtilitiesCoreVersion>$(MicrosoftBuildVersion)</MicrosoftBuildUtilitiesCoreVersion>
+    <MicrosoftDotNetPlatformAbstractionsVersion>1.1.1</MicrosoftDotNetPlatformAbstractionsVersion>
+    <NugetProjectModelVersion>4.9.4</NugetProjectModelVersion>
+    <NugetPackagingVersion>4.9.4</NugetPackagingVersion>
+    <MicrosoftDiaSymReaderNativeVersion>1.7.0</MicrosoftDiaSymReaderNativeVersion>
+  </PropertyGroup>
+  <!-- Base runtime pack name (RID-less) for shared framework tooling. -->
+  <PropertyGroup>
+    <MicrosoftNETCoreAppRuntimePackage>Microsoft.NETCore.App.Runtime</MicrosoftNETCoreAppRuntimePackage>
+  </PropertyGroup>
+</Project>
