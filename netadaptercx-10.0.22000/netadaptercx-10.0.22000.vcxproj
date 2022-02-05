@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{FF7B54D0-A74F-4B6C-AFBC-BB701DBD5F84}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>netadaptercx-10.0.22000</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);__KERNEL__</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/netcx/adapter;$(ProjectDir)/netcx/adapter/config;$(ProjectDir)/netcx/adapter/extension;$(ProjectDir)/netcx/adapter/idle;$(ProjectDir)/netcx/adapter/monitor;$(ProjectDir)/netcx/adapter/powerpolicy;$(ProjectDir)/netcx/adapter/queue;$(ProjectDir)/netcx/adapter/rxscaling;$(ProjectDir)/netcx/adapter/statemachines;$(ProjectDir)/netcx/adapter/types;$(ProjectDir)/netcx/bm;$(ProjectDir)/netcx/ec/driver;$(ProjectDir)/netcx/ec/inc;$(ProjectDir)/netcx/ec/lib;$(ProjectDir)/netcx/ec/lib/km;$(ProjectDir)/netcx/statistics;$(ProjectDir)/netcx/statistics/km;$(ProjectDir)/netcx/translator;$(ProjectDir)/netcx/translator/checksum;$(ProjectDir)/netcx/translator/coalescing;$(ProjectDir)/netcx/translator/framelayout;$(ProjectDir)/netcx/translator/metadata;$(ProjectDir)/netcx/translator/segmentation;$(ProjectDir)/rtl/inc;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="netcx\adapter\config\netclientdriverconfigurationprecomp.hpp" />
+    <ClInclude Include="netcx\adapter\extension\nxextension.hpp" />
+    <ClInclude Include="netcx\adapter\extension\nxextensionlayout.hpp" />
+    <ClInclude Include="netcx\adapter\idle\idlestatemachine.hpp" />
+    <ClInclude Include="netcx\adapter\idle\powerreferenceholder.hpp" />
+    <ClInclude Include="netcx\adapter\monitor\nxpacketmonitor.hpp" />
+    <ClInclude Include="netcx\adapter\powerpolicy\nxidlerestrictions.hpp" />
+    <ClInclude Include="netcx\adapter\powerpolicy\nxpowerentry.hpp" />
+    <ClInclude Include="netcx\adapter\powerpolicy\nxpowerlist.hpp" />
+    <ClInclude Include="netcx\adapter\powerpolicy\nxpoweroffload.hpp" />
+    <ClInclude Include="netcx\adapter\powerpolicy\nxpowerpolicy.hpp" />
+    <ClInclude Include="netcx\adapter\powerpolicy\nxwakesource.hpp" />
+    <ClInclude Include="netcx\adapter\queue\queue.hpp" />
+    <ClInclude Include="netcx\adapter\rxscaling\nxrxscaling.hpp" />
+    <ClInclude Include="netcx\adapter\statemachines\adapterpnppowerstatemachine.h" />
+    <ClInclude Include="netcx\adapter\statemachines\devicepnppowerstatemachine.h" />
+    <ClInclude Include="netcx\adapter\statemachines\nxadapterstatemachine.h" />
+    <ClInclude Include="netcx\adapter\statemachines\nxdevicestatemachine.h" />
+    <ClInclude Include="netcx\adapter\types\nxadapterextensiontypes.hpp" />
+    <ClInclude Include="netcx\adapter\types\nxadaptertypes.hpp" />
+    <ClInclude Include="netcx\adapter\adapterpnppower.hpp" />
+    <ClInclude Include="netcx\adapter\devicepnppower.hpp" />
+    <ClInclude Include="netcx\adapter\nx.hpp" />
+    <ClInclude Include="netcx\adapter\nxadapter.hpp" />
+    <ClInclude Include="netcx\adapter\nxadaptercollection.hpp" />
+    <ClInclude Include="netcx\adapter\nxadapterextension.hpp" />
+    <ClInclude Include="netcx\adapter\nxbufferqueue.hpp" />
+    <ClInclude Include="netcx\adapter\nxconfiguration.hpp" />
+    <ClInclude Include="netcx\adapter\nxdefaultdatapath.hpp" />
+    <ClInclude Include="netcx\adapter\nxdevice.hpp" />
+    <ClInclude Include="netcx\adapter\nxdriver.hpp" />
+    <ClInclude Include="netcx\adapter\nxexecutioncontext.hpp" />
+    <ClInclude Include="netcx\adapter\nxexecutioncontexttask.hpp" />
+    <ClInclude Include="netcx\adapter\nxextension.hpp" />
+    <ClInclude Include="netcx\adapter\nxoffload.hpp" />
+    <ClInclude Include="netcx\adapter\nxprivateglobals.hpp" />
+    <ClInclude Include="netcx\adapter\nxqueue.hpp" />
+    <ClInclude Include="netcx\adapter\nxqueueverifier.hpp" />
+    <ClInclude Include="netcx\adapter\nxutility.hpp" />
+    <ClInclude Include="netcx\adapter\verifier.hpp" />
+    <ClInclude Include="netcx\adapter\version.hpp" />
+    <ClInclude Include="netcx\adapter\wdfobjectcallback.hpp" />
+    <ClInclude Include="netcx\bm\bmprecomp.hpp" />
+    <ClInclude Include="netcx\bm\bufferheader.hpp" />
+    <ClInclude Include="netcx\bm\buffermanager.hpp" />
+    <ClInclude Include="netcx\bm\bufferpool.hpp" />
+    <ClInclude Include="netcx\bm\commonbuffervector.hpp" />
+    <ClInclude Include="netcx\bm\dmaallocator.hpp" />
+    <ClInclude Include="netcx\bm\ibuffervector.hpp" />
+    <ClInclude Include="netcx\bm\ibuffervectorallocator.hpp" />
+    <ClInclude Include="netcx\bm\mdl.hpp" />
+    <ClInclude Include="netcx\bm\nonpagedallocator.hpp" />
+    <ClInclude Include="netcx\bm\nonpagedbuffervector.hpp" />
+    <ClInclude Include="netcx\ec\driver\precompiled.hpp" />
+    <ClInclude Include="netcx\ec\driver\trace.hpp" />
+    <ClInclude Include="netcx\ec\inc\executioncontext.h" />
+    <ClInclude Include="netcx\ec\inc\executioncontextdispatch.h" />
+    <ClInclude Include="netcx\ec\inc\executioncontextnotification.h" />
+    <ClInclude Include="netcx\ec\inc\executioncontextpoll.h" />
+    <ClInclude Include="netcx\ec\inc\executioncontextregistry.h" />
+    <ClInclude Include="netcx\ec\inc\executioncontexttask.h" />
+    <ClInclude Include="netcx\ec\lib\km\precompiled.hpp" />
+    <ClInclude Include="netcx\ec\lib\activitytracker.hpp" />
+    <ClInclude Include="netcx\ec\lib\dpc.h" />
+    <ClInclude Include="netcx\ec\lib\executioncontext.hpp" />
+    <ClInclude Include="netcx\ec\lib\executioncontextstatistics.hpp" />
+    <ClInclude Include="netcx\ec\lib\executioncontexttask.hpp" />
+    <ClInclude Include="netcx\ec\lib\irqlcontroller.h" />
+    <ClInclude Include="netcx\ec\lib\notificationreserved.hpp" />
+    <ClInclude Include="netcx\ec\lib\pollreserved.hpp" />
+    <ClInclude Include="netcx\ec\lib\thread.hpp" />
+    <ClInclude Include="netcx\ec\lib\timebudget.h" />
+    <ClInclude Include="netcx\ec\lib\timebudgetwarninglogger.h" />
+    <ClInclude Include="netcx\statistics\km\precompiled.hpp" />
+    <ClInclude Include="netcx\statistics\histogram.h" />
+    <ClInclude Include="netcx\statistics\histogramapi.h" />
+    <ClInclude Include="netcx\statistics\histogramhub.h" />
+    <ClInclude Include="netcx\statistics\histogramtimer.h" />
+    <ClInclude Include="netcx\translator\checksum\checksum.hpp" />
+    <ClInclude Include="netcx\translator\coalescing\coalescing.hpp" />
+    <ClInclude Include="netcx\translator\framelayout\layer2layout.hpp" />
+    <ClInclude Include="netcx\translator\framelayout\layer3layout.hpp" />
+    <ClInclude Include="netcx\translator\framelayout\layer4layout.hpp" />
+    <ClInclude Include="netcx\translator\framelayout\layoutparser.hpp" />
+    <ClInclude Include="netcx\translator\metadata\metadatatranslator.hpp" />
+    <ClInclude Include="netcx\translator\segmentation\segmentation.hpp" />
+    <ClInclude Include="netcx\translator\nxbouncebufferpool.hpp" />
+    <ClInclude Include="netcx\translator\nxdma.hpp" />
+    <ClInclude Include="netcx\translator\nxextensions.hpp" />
+    <ClInclude Include="netcx\translator\nxnblqueue.hpp" />
+    <ClInclude Include="netcx\translator\nxnblsequence.h" />
+    <ClInclude Include="netcx\translator\nxnbltranslation.hpp" />
+    <ClInclude Include="netcx\translator\nxoffload.hpp" />
+    <ClInclude Include="netcx\translator\nxpacketlayout.hpp" />
+    <ClInclude Include="netcx\translator\nxringbuffer.hpp" />
+    <ClInclude Include="netcx\translator\nxringbufferrange.hpp" />
+    <ClInclude Include="netcx\translator\nxringcontext.hpp" />
+    <ClInclude Include="netcx\translator\nxrxnblcontext.hpp" />
+    <ClInclude Include="netcx\translator\nxrxxlat.hpp" />
+    <ClInclude Include="netcx\translator\nxsignal.hpp" />
+    <ClInclude Include="netcx\translator\nxstatistics.hpp" />
+    <ClInclude Include="netcx\translator\nxtranslationapp.hpp" />
+    <ClInclude Include="netcx\translator\nxtxdemux.hpp" />
+    <ClInclude Include="netcx\translator\nxtxnblcontext.hpp" />
+    <ClInclude Include="netcx\translator\nxtxxlat.hpp" />
+    <ClInclude Include="netcx\translator\nxxlatcommon.hpp" />
+    <ClInclude Include="netcx\translator\nxxlatprecomp.hpp" />
+    <ClInclude Include="netcx\translator\queue.hpp" />
+    <ClInclude Include="netcx\translator\queuecontrol.hpp" />
+    <ClInclude Include="netcx\translator\rxscaling.hpp" />
+    <ClInclude Include="netcx\translator\txpeeraddressdemux.hpp" />
+    <ClInclude Include="netcx\translator\txscaling.hpp" />
+    <ClInclude Include="netcx\translator\txuserprioritydemux.hpp" />
+    <ClInclude Include="netcx\translator\txwmminfodemux.hpp" />
+    <ClInclude Include="rtl\inc\karray.h" />
+    <ClInclude Include="rtl\inc\kbitmap.h" />
+    <ClInclude Include="rtl\inc\kcriticalregion.h" />
+    <ClInclude Include="rtl\inc\kdebug.h" />
+    <ClInclude Include="rtl\inc\kdeletepolicy.h" />
+    <ClInclude Include="rtl\inc\khistogram.h" />
+    <ClInclude Include="rtl\inc\kintrusivelist.h" />
+    <ClInclude Include="rtl\inc\klockholder.h" />
+    <ClInclude Include="rtl\inc\kmacros.h" />
+    <ClInclude Include="rtl\inc\knew.h" />
+    <ClInclude Include="rtl\inc\kptr.h" />
+    <ClInclude Include="rtl\inc\kpushlock.h" />
+    <ClInclude Include="rtl\inc\kref.h" />
+    <ClInclude Include="rtl\inc\krefinline.h" />
+    <ClInclude Include="rtl\inc\kregkey.h" />
+    <ClInclude Include="rtl\inc\krundown.h" />
+    <ClInclude Include="rtl\inc\krundownholder.h" />
+    <ClInclude Include="rtl\inc\kspinlock.h" />
+    <ClInclude Include="rtl\inc\kunits.h" />
+    <ClInclude Include="rtl\inc\kwaitevent.h" />
+    <ClInclude Include="rtl\inc\kworkitem.h" />
+    <ClInclude Include="rtl\inc\RtlHomogenousSequence.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="netcx\adapter\config\netclientdriverconfigurationimpl.cpp" />
+    <ClCompile Include="netcx\adapter\extension\nxextensionlayout.cpp" />
+    <ClCompile Include="netcx\adapter\idle\idlestatemachine.cpp" />
+    <ClCompile Include="netcx\adapter\idle\powerreferenceholder.cpp" />
+    <ClCompile Include="netcx\adapter\monitor\nxpacketmonitor.cpp" />
+    <ClCompile Include="netcx\adapter\powerpolicy\nxidlerestrictions.cpp" />
+    <ClCompile Include="netcx\adapter\powerpolicy\nxpowerentry.cpp" />
+    <ClCompile Include="netcx\adapter\powerpolicy\nxpowerlist.cpp" />
+    <ClCompile Include="netcx\adapter\powerpolicy\nxpoweroffload.cpp" />
+    <ClCompile Include="netcx\adapter\powerpolicy\nxpowerpolicy.cpp" />
+    <ClCompile Include="netcx\adapter\powerpolicy\nxwakesource.cpp" />
+    <ClCompile Include="netcx\adapter\queue\queue.cpp" />
+    <ClCompile Include="netcx\adapter\rxscaling\nxrxscaling.cpp" />
+    <ClCompile Include="netcx\adapter\types\nxadapterextensiontypes.cpp" />
+    <ClCompile Include="netcx\adapter\types\nxadaptertypes.cpp" />
+    <ClCompile Include="netcx\adapter\adapterpnppower.cpp" />
+    <ClCompile Include="netcx\adapter\devicepnppower.cpp" />
+    <ClCompile Include="netcx\adapter\nxadapter.cpp" />
+    <ClCompile Include="netcx\adapter\nxadapterapi.cpp" />
+    <ClCompile Include="netcx\adapter\nxadaptercollection.cpp" />
+    <ClCompile Include="netcx\adapter\nxadapterdriverapi.cpp" />
+    <ClCompile Include="netcx\adapter\nxadapterextension.cpp" />
+    <ClCompile Include="netcx\adapter\nxadapterextensionapi.cpp" />
+    <ClCompile Include="netcx\adapter\nxbufferqueue.cpp" />
+    <ClCompile Include="netcx\adapter\nxbufferqueueapi.cpp" />
+    <ClCompile Include="netcx\adapter\nxconfiguration.cpp" />
+    <ClCompile Include="netcx\adapter\nxconfigurationapi.cpp" />
+    <ClCompile Include="netcx\adapter\nxdefaultdatapath.cpp" />
+    <ClCompile Include="netcx\adapter\nxdevice.cpp" />
+    <ClCompile Include="netcx\adapter\nxdeviceapi.cpp" />
+    <ClCompile Include="netcx\adapter\nxdriver.cpp" />
+    <ClCompile Include="netcx\adapter\nxexecutioncontext.cpp" />
+    <ClCompile Include="netcx\adapter\nxexecutioncontextapi.cpp" />
+    <ClCompile Include="netcx\adapter\nxexecutioncontexttask.cpp" />
+    <ClCompile Include="netcx\adapter\nxextension.cpp" />
+    <ClCompile Include="netcx\adapter\nxoffload.cpp" />
+    <ClCompile Include="netcx\adapter\nxpowerpolicyapi.cpp" />
+    <ClCompile Include="netcx\adapter\nxqueue.cpp" />
+    <ClCompile Include="netcx\adapter\nxqueueapi.cpp" />
+    <ClCompile Include="netcx\adapter\nxqueueverifier.cpp" />
+    <ClCompile Include="netcx\adapter\nxutility.cpp" />
+    <ClCompile Include="netcx\adapter\verifier.cpp" />
+    <ClCompile Include="netcx\adapter\version.cpp" />
+    <ClCompile Include="netcx\bm\bufferheader.cpp" />
+    <ClCompile Include="netcx\bm\buffermanager.cpp" />
+    <ClCompile Include="netcx\bm\bufferpool.cpp" />
+    <ClCompile Include="netcx\bm\commonbuffervector.cpp" />
+    <ClCompile Include="netcx\bm\dmaallocator.cpp" />
+    <ClCompile Include="netcx\bm\ibuffervector.cpp" />
+    <ClCompile Include="netcx\bm\mdl.cpp" />
+    <ClCompile Include="netcx\bm\netclientbufferimpl.cpp" />
+    <ClCompile Include="netcx\bm\nonpagedallocator.cpp" />
+    <ClCompile Include="netcx\bm\nonpagedbuffervector.cpp" />
+    <ClCompile Include="netcx\ec\driver\driver.cpp" />
+    <ClCompile Include="netcx\ec\lib\activitytracker.cpp" />
+    <ClCompile Include="netcx\ec\lib\dispatch.cpp" />
+    <ClCompile Include="netcx\ec\lib\executioncontext.cpp" />
+    <ClCompile Include="netcx\ec\lib\executioncontextstatistics.cpp" />
+    <ClCompile Include="netcx\ec\lib\executioncontexttask.cpp" />
+    <ClCompile Include="netcx\ec\lib\irqlcontroller.cpp" />
+    <ClCompile Include="netcx\ec\lib\notificationreserved.cpp" />
+    <ClCompile Include="netcx\ec\lib\pollreserved.cpp" />
+    <ClCompile Include="netcx\ec\lib\thread.cpp" />
+    <ClCompile Include="netcx\ec\lib\timebudget.cpp" />
+    <ClCompile Include="netcx\ec\lib\timebudgetwarninglogger.cpp" />
+    <ClCompile Include="netcx\statistics\histogram.cpp" />
+    <ClCompile Include="netcx\statistics\histogramapi.cpp" />
+    <ClCompile Include="netcx\statistics\histogramhub.cpp" />
+    <ClCompile Include="netcx\translator\checksum\km\checksumkm.cpp" />
+    <ClCompile Include="netcx\translator\checksum\checksum.cpp" />
+    <ClCompile Include="netcx\translator\coalescing\km\coalescingkm.cpp" />
+    <ClCompile Include="netcx\translator\framelayout\layer2layout.cpp" />
+    <ClCompile Include="netcx\translator\framelayout\layer3layout.cpp" />
+    <ClCompile Include="netcx\translator\framelayout\layer4layout.cpp" />
+    <ClCompile Include="netcx\translator\framelayout\layoutparser.cpp" />
+    <ClCompile Include="netcx\translator\metadata\metadatatranslator.cpp" />
+    <ClCompile Include="netcx\translator\segmentation\km\segmentationkm.cpp" />
+    <ClCompile Include="netcx\translator\segmentation\segmentation.cpp" />
+    <ClCompile Include="netcx\translator\nxbouncebufferpool.cpp" />
+    <ClCompile Include="netcx\translator\nxdma.cpp" />
+    <ClCompile Include="netcx\translator\nxnbldatapath.cpp" />
+    <ClCompile Include="netcx\translator\nxnblqueue.cpp" />
+    <ClCompile Include="netcx\translator\nxnbltranslation.cpp" />
+    <ClCompile Include="netcx\translator\nxoffload.cpp" />
+    <ClCompile Include="netcx\translator\nxoffloadv1.cpp" />
+    <ClCompile Include="netcx\translator\nxpacketlayout.cpp" />
+    <ClCompile Include="netcx\translator\nxringbuffer.cpp" />
+    <ClCompile Include="netcx\translator\nxringcontext.cpp" />
+    <ClCompile Include="netcx\translator\nxrxxlat.cpp" />
+    <ClCompile Include="netcx\translator\nxstatistics.cpp" />
+    <ClCompile Include="netcx\translator\nxtranslationapp.cpp" />
+    <ClCompile Include="netcx\translator\nxtxdemux.cpp" />
+    <ClCompile Include="netcx\translator\nxtxxlat.cpp" />
+    <ClCompile Include="netcx\translator\queue.cpp" />
+    <ClCompile Include="netcx\translator\queuecontrol.cpp" />
+    <ClCompile Include="netcx\translator\rxscaling.cpp" />
+    <ClCompile Include="netcx\translator\txpeeraddressdemux.cpp" />
+    <ClCompile Include="netcx\translator\txscaling.cpp" />
+    <ClCompile Include="netcx\translator\txuserprioritydemux.cpp" />
+    <ClCompile Include="netcx\translator\txwmminfodemux.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
