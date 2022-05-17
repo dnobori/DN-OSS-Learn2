@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{0AECBBE5-338E-47AC-84CE-19110AFD6C21}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>openvpn-linux-220517</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);__KERNEL__</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/src/src/client;$(ProjectDir)/src/src/common;$(ProjectDir)/src/src/configmgr;$(ProjectDir)/src/src/dbus;$(ProjectDir)/src/src/log;$(ProjectDir)/src/src/netcfg;$(ProjectDir)/src/src/netcfg/dns;$(ProjectDir)/src/src/ovpn3cli;$(ProjectDir)/src/src/ovpn3cli/commands;$(ProjectDir)/src/src/sessionmgr;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\src\client\backend-signals.hpp" />
+    <ClInclude Include="src\src\client\core-client.hpp" />
+    <ClInclude Include="src\src\client\core-client-netcfg.hpp" />
+    <ClInclude Include="src\src\client\statistics.hpp" />
+    <ClInclude Include="src\src\client\statusevent.hpp" />
+    <ClInclude Include="src\src\common\cmdargparser.hpp" />
+    <ClInclude Include="src\src\common\cmdargparser-exceptions.hpp" />
+    <ClInclude Include="src\src\common\configfileparser.hpp" />
+    <ClInclude Include="src\src\common\core-extensions.hpp" />
+    <ClInclude Include="src\src\common\lookup.hpp" />
+    <ClInclude Include="src\src\common\machineid.hpp" />
+    <ClInclude Include="src\src\common\open-uri.hpp" />
+    <ClInclude Include="src\src\common\requiresqueue.hpp" />
+    <ClInclude Include="src\src\common\timestamp.hpp" />
+    <ClInclude Include="src\src\common\utils.hpp" />
+    <ClInclude Include="src\src\configmgr\configmgr.hpp" />
+    <ClInclude Include="src\src\configmgr\overrides.hpp" />
+    <ClInclude Include="src\src\configmgr\proxy-configmgr.hpp" />
+    <ClInclude Include="src\src\dbus\connection.hpp" />
+    <ClInclude Include="src\src\dbus\connection-creds.hpp" />
+    <ClInclude Include="src\src\dbus\constants.hpp" />
+    <ClInclude Include="src\src\dbus\core.hpp" />
+    <ClInclude Include="src\src\dbus\exceptions.hpp" />
+    <ClInclude Include="src\src\dbus\glibutils.hpp" />
+    <ClInclude Include="src\src\dbus\idlecheck.hpp" />
+    <ClInclude Include="src\src\dbus\object.hpp" />
+    <ClInclude Include="src\src\dbus\object-property.hpp" />
+    <ClInclude Include="src\src\dbus\path.hpp" />
+    <ClInclude Include="src\src\dbus\processwatch.hpp" />
+    <ClInclude Include="src\src\dbus\proxy.hpp" />
+    <ClInclude Include="src\src\dbus\requiresqueue-proxy.hpp" />
+    <ClInclude Include="src\src\dbus\signals.hpp" />
+    <ClInclude Include="src\src\log\ansicolours.hpp" />
+    <ClInclude Include="src\src\log\colourengine.hpp" />
+    <ClInclude Include="src\src\log\core-dbus-logbase.hpp" />
+    <ClInclude Include="src\src\log\dbus-log.hpp" />
+    <ClInclude Include="src\src\log\logevent.hpp" />
+    <ClInclude Include="src\src\log\logger.hpp" />
+    <ClInclude Include="src\src\log\log-helpers.hpp" />
+    <ClInclude Include="src\src\log\logwriter.hpp" />
+    <ClInclude Include="src\src\log\proxy-log.hpp" />
+    <ClInclude Include="src\src\log\service.hpp" />
+    <ClInclude Include="src\src\netcfg\dns\proxy-systemd-resolved.hpp" />
+    <ClInclude Include="src\src\netcfg\dns\resolvconf-file.hpp" />
+    <ClInclude Include="src\src\netcfg\dns\resolver-backend-interface.hpp" />
+    <ClInclude Include="src\src\netcfg\dns\resolver-settings.hpp" />
+    <ClInclude Include="src\src\netcfg\dns\settings-manager.hpp" />
+    <ClInclude Include="src\src\netcfg\dns\systemd-resolved.hpp" />
+    <ClInclude Include="src\src\netcfg\core-tunbuilder.hpp" />
+    <ClInclude Include="src\src\netcfg\netcfg.hpp" />
+    <ClInclude Include="src\src\netcfg\netcfg-changeevent.hpp" />
+    <ClInclude Include="src\src\netcfg\netcfg-changetype.hpp" />
+    <ClInclude Include="src\src\netcfg\netcfg-configfile.hpp" />
+    <ClInclude Include="src\src\netcfg\netcfg-dco.hpp" />
+    <ClInclude Include="src\src\netcfg\netcfg-device.hpp" />
+    <ClInclude Include="src\src\netcfg\netcfg-exception.hpp" />
+    <ClInclude Include="src\src\netcfg\netcfg-options.hpp" />
+    <ClInclude Include="src\src\netcfg\netcfg-signals.hpp" />
+    <ClInclude Include="src\src\netcfg\netcfg-subscriptions.hpp" />
+    <ClInclude Include="src\src\netcfg\proxy-netcfg.hpp" />
+    <ClInclude Include="src\src\ovpn3cli\commands\commands.hpp" />
+    <ClInclude Include="src\src\ovpn3cli\arghelpers.hpp" />
+    <ClInclude Include="src\src\ovpn3cli\ovpn3cli.hpp" />
+    <ClInclude Include="src\src\sessionmgr\proxy-sessionmgr.hpp" />
+    <ClInclude Include="src\src\sessionmgr\sessionmgr.hpp" />
+    <ClInclude Include="src\src\sessionmgr\sessionmgr-events.hpp" />
+    <ClInclude Include="src\src\sessionmgr\sessionmgr-exceptions.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\addons\aws\openvpn3-service-aws.cpp" />
+    <ClCompile Include="src\src\client\openvpn3-service-backendstart.cpp" />
+    <ClCompile Include="src\src\client\openvpn3-service-client.cpp" />
+    <ClCompile Include="src\src\common\cmdargparser.cpp" />
+    <ClCompile Include="src\src\common\configfileparser.cpp" />
+    <ClCompile Include="src\src\common\lookup.cpp" />
+    <ClCompile Include="src\src\common\machineid.cpp" />
+    <ClCompile Include="src\src\common\open-uri.cpp" />
+    <ClCompile Include="src\src\common\requiresqueue.cpp" />
+    <ClCompile Include="src\src\common\timestamp.cpp" />
+    <ClCompile Include="src\src\common\utils.cpp" />
+    <ClCompile Include="src\src\configmgr\openvpn3-service-configmgr.cpp" />
+    <ClCompile Include="src\src\configmgr\overrides.cpp" />
+    <ClCompile Include="src\src\log\openvpn3-service-logger.cpp" />
+    <ClCompile Include="src\src\netcfg\dns\proxy-systemd-resolved.cpp" />
+    <ClCompile Include="src\src\netcfg\dns\resolvconf-file.cpp" />
+    <ClCompile Include="src\src\netcfg\dns\resolver-settings.cpp" />
+    <ClCompile Include="src\src\netcfg\dns\settings-manager.cpp" />
+    <ClCompile Include="src\src\netcfg\dns\systemd-resolved.cpp" />
+    <ClCompile Include="src\src\netcfg\core-tunbuilder.cpp" />
+    <ClCompile Include="src\src\netcfg\netcfg-changeevent.cpp" />
+    <ClCompile Include="src\src\netcfg\netcfg-changetype.cpp" />
+    <ClCompile Include="src\src\netcfg\netcfg-dco.cpp" />
+    <ClCompile Include="src\src\netcfg\netcfg-subscriptions.cpp" />
+    <ClCompile Include="src\src\netcfg\openvpn3-service-netcfg.cpp" />
+    <ClCompile Include="src\src\netcfg\proxy-netcfg.cpp" />
+    <ClCompile Include="src\src\ovpn3cli\commands\config.cpp" />
+    <ClCompile Include="src\src\ovpn3cli\commands\log.cpp" />
+    <ClCompile Include="src\src\ovpn3cli\commands\log-service.cpp" />
+    <ClCompile Include="src\src\ovpn3cli\commands\netcfg-service.cpp" />
+    <ClCompile Include="src\src\ovpn3cli\commands\session.cpp" />
+    <ClCompile Include="src\src\ovpn3cli\commands\sessionmgr-service.cpp" />
+    <ClCompile Include="src\src\ovpn3cli\commands\variables.cpp" />
+    <ClCompile Include="src\src\ovpn3cli\commands\version.cpp" />
+    <ClCompile Include="src\src\ovpn3cli\arghelpers.cpp" />
+    <ClCompile Include="src\src\ovpn3cli\openvpn3.cpp" />
+    <ClCompile Include="src\src\ovpn3cli\openvpn3-admin.cpp" />
+    <ClCompile Include="src\src\python\openvpn3\gen-python-constants.cpp" />
+    <ClCompile Include="src\src\sessionmgr\openvpn3-service-sessionmgr.cpp" />
+    <ClCompile Include="src\src\sessionmgr\sessionmgr-events.cpp" />
+    <ClCompile Include="src\src\tests\command-parser\cmdparser.cpp" />
+    <ClCompile Include="src\src\tests\dbus\config-lock-down.cpp" />
+    <ClCompile Include="src\src\tests\dbus\config-override-selftest.cpp" />
+    <ClCompile Include="src\src\tests\dbus\conncreds.cpp" />
+    <ClCompile Include="src\src\tests\dbus\enable-logging.cpp" />
+    <ClCompile Include="src\src\tests\dbus\fetch-avail-config-paths.cpp" />
+    <ClCompile Include="src\src\tests\dbus\fetch-avail-session-paths.cpp" />
+    <ClCompile Include="src\src\tests\dbus\fetch-config.cpp" />
+    <ClCompile Include="src\src\tests\dbus\fetch-config2.cpp" />
+    <ClCompile Include="src\src\tests\dbus\get-acl.cpp" />
+    <ClCompile Include="src\src\tests\dbus\get-config-overrides.cpp" />
+    <ClCompile Include="src\src\tests\dbus\getconnectionstats.cpp" />
+    <ClCompile Include="src\src\tests\dbus\getlastlogevent.cpp" />
+    <ClCompile Include="src\src\tests\dbus\getlaststatus.cpp" />
+    <ClCompile Include="src\src\tests\dbus\get-service-version-prop.cpp" />
+    <ClCompile Include="src\src\tests\dbus\logevent-selftest.cpp" />
+    <ClCompile Include="src\src\tests\dbus\log-listener.cpp" />
+    <ClCompile Include="src\src\tests\dbus\log-listener2.cpp" />
+    <ClCompile Include="src\src\tests\dbus\logservice1.cpp" />
+    <ClCompile Include="src\src\tests\dbus\manager-lookupconfigname.cpp" />
+    <ClCompile Include="src\src\tests\dbus\netcfg-changeevent-selftest.cpp" />
+    <ClCompile Include="src\src\tests\dbus\netcfg-proxy-unit.cpp" />
+    <ClCompile Include="src\src\tests\dbus\netcfg-systemd-resolved-basic.cpp" />
+    <ClCompile Include="src\src\tests\dbus\proc-wait-for.cpp" />
+    <ClCompile Include="src\src\tests\dbus\proc-wait-for-pid.cpp" />
+    <ClCompile Include="src\src\tests\dbus\proxy-checkserviceavail.cpp" />
+    <ClCompile Include="src\src\tests\dbus\request-queue-client.cpp" />
+    <ClCompile Include="src\src\tests\dbus\request-queue-client2.cpp" />
+    <ClCompile Include="src\src\tests\dbus\request-queue-service.cpp" />
+    <ClCompile Include="src\src\tests\dbus\signal-listener.cpp" />
+    <ClCompile Include="src\src\tests\dbus\statusevent-selftest.cpp" />
+    <ClCompile Include="src\src\tests\misc\config-export-json-test.cpp" />
+    <ClCompile Include="src\src\tests\misc\gettimestamp.cpp" />
+    <ClCompile Include="src\src\tests\misc\json-config-import-test.cpp" />
+    <ClCompile Include="src\src\tests\misc\log-prefix-selftest.cpp" />
+    <ClCompile Include="src\src\tests\misc\logwriter-tests.cpp" />
+    <ClCompile Include="src\src\tests\misc\lookup-tests.cpp" />
+    <ClCompile Include="src\src\tests\misc\machineid-test.cpp" />
+    <ClCompile Include="src\src\tests\misc\netcfg-dns-direct-file-selftest.cpp" />
+    <ClCompile Include="src\src\tests\misc\open-uri-test.cpp" />
+    <ClCompile Include="src\src\tests\misc\syslog-facility-mapping-test.cpp" />
+    <ClCompile Include="src\src\tests\netcfg\cli.cpp" />
+    <ClCompile Include="src\src\tests\ovpn3-core\profilemerge-optionlist.cpp" />
+    <ClCompile Include="src\src\tests\unit\configfileparser.cpp" />
+    <ClCompile Include="src\src\tests\unit\dns-resolver-settings.cpp" />
+    <ClCompile Include="src\src\tests\unit\dns-settings-manager-test.cpp" />
+    <ClCompile Include="src\src\tests\unit\logevent.cpp" />
+    <ClCompile Include="src\src\tests\unit\lookup.cpp" />
+    <ClCompile Include="src\src\tests\unit\machine-id.cpp" />
+    <ClCompile Include="src\src\tests\unit\netcfg-changeevent.cpp" />
+    <ClCompile Include="src\src\tests\unit\sessionmgr-events.cpp" />
+    <ClCompile Include="src\src\tests\unit\statusevent.cpp" />
+    <ClCompile Include="src\src\tests\unit\syslog-facility-mapping.cpp" />
+    <ClCompile Include="src\src\tests\unit\timestamp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\addons\aws\certs\af_south_1.crt" />
+    <None Include="src\addons\aws\certs\ap_east_1.crt" />
+    <None Include="src\addons\aws\certs\default.crt" />
+    <None Include="src\addons\aws\certs\eu_south_1.crt" />
+    <None Include="src\addons\aws\certs\me_south_1.crt" />
+    <None Include="src\addons\aws\certs\us_gov.crt" />
+    <None Include="src\addons\aws\policy\net.openvpn.v3.aws.conf.in" />
+    <None Include="src\addons\aws\systemd\openvpn3-aws.service.in" />
+    <None Include="src\addons\aws\CMakeLists.txt" />
+    <None Include="src\addons\aws\Makefile.am" />
+    <None Include="src\contrib\cmake-clion\CMakeLists.txt" />
+    <None Include="src\contrib\cmake-clion\README.rst" />
+    <None Include="src\contrib\Jenkinsfile" />
+    <None Include="src\distro\systemd\Makefile.am" />
+    <None Include="src\distro\systemd\openvpn3-autoload.service.in" />
+    <None Include="src\distro\systemd\openvpn3-session@.service.in" />
+    <None Include="src\distro\systemd\openvpn3-systemd" />
+    <None Include="src\docs\dbus\dbus-logging.md" />
+    <None Include="src\docs\dbus\dbus-overview.md" />
+    <None Include="src\docs\dbus\dbus-primer.md" />
+    <None Include="src\docs\dbus\dbus-service-net.openvpn.v3.backends.md" />
+    <None Include="src\docs\dbus\dbus-service-net.openvpn.v3.client.md" />
+    <None Include="src\docs\dbus\dbus-service-net.openvpn.v3.configuration.md" />
+    <None Include="src\docs\dbus\dbus-service-net.openvpn.v3.log.md" />
+    <None Include="src\docs\dbus\dbus-service-net.openvpn.v3.netcfg.md" />
+    <None Include="src\docs\dbus\dbus-service-net.openvpn.v3.sessions.md" />
+    <None Include="src\docs\man\Makefile.am" />
+    <None Include="src\docs\man\openvpn2.1.rst" />
+    <None Include="src\docs\man\openvpn3.1.rst" />
+    <None Include="src\docs\man\openvpn3-admin.8.rst" />
+    <None Include="src\docs\man\openvpn3-admin-log-service.8.rst.in" />
+    <None Include="src\docs\man\openvpn3-admin-netcfg-service.8.rst" />
+    <None Include="src\docs\man\openvpn3-admin-sessionmgr-service.8.rst" />
+    <None Include="src\docs\man\openvpn3-as.1.rst" />
+    <None Include="src\docs\man\openvpn3-autoload.8.rst" />
+    <None Include="src\docs\man\openvpn3-config-acl.1.rst" />
+    <None Include="src\docs\man\openvpn3-config-dump.1.rst" />
+    <None Include="src\docs\man\openvpn3-config-import.1.rst" />
+    <None Include="src\docs\man\openvpn3-config-manage.1.rst" />
+    <None Include="src\docs\man\openvpn3-config-remove.1.rst" />
+    <None Include="src\docs\man\openvpn3-configs-list.1.rst" />
+    <None Include="src\docs\man\openvpn3-linux.7.rst" />
+    <None Include="src\docs\man\openvpn3-log.1.rst" />
+    <None Include="src\docs\man\openvpn3-service-aws.8.rst.in" />
+    <None Include="src\docs\man\openvpn3-service-backendstart.8.rst.in" />
+    <None Include="src\docs\man\openvpn3-service-client.8.rst.in" />
+    <None Include="src\docs\man\openvpn3-service-configmgr.8.rst.in" />
+    <None Include="src\docs\man\openvpn3-service-logger.8.rst" />
+    <None Include="src\docs\man\openvpn3-service-netcfg.8.rst.in" />
+    <None Include="src\docs\man\openvpn3-service-sessionmgr.8.rst.in" />
+    <None Include="src\docs\man\openvpn3-session-acl.1.rst" />
+    <None Include="src\docs\man\openvpn3-session-auth.1.rst" />
+    <None Include="src\docs\man\openvpn3-session-manage.1.rst" />
+    <None Include="src\docs\man\openvpn3-sessions-list.1.rst" />
+    <None Include="src\docs\man\openvpn3-session-start.1.rst" />
+    <None Include="src\docs\man\openvpn3-session-stats.1.rst" />
+    <None Include="src\docs\man\openvpn3-systemd.8.rst" />
+    <None Include="src\docs\coding-style.md" />
+    <None Include="src\docs\debugging.md" />
+    <None Include="src\docs\openvpn3-autoload.md" />
+    <None Include="src\doxygen\Makefile.am" />
+    <None Include="src\doxygen\openvpn3-linux.doxy.in" />
+    <None Include="src\m4\.keep" />
+    <None Include="src\m4\ax_cxx_compile_stdcxx.m4" />
+    <None Include="src\src\netcfg\dco-keyconfig.proto" />
+    <None Include="src\src\policy\Makefile.am" />
+    <None Include="src\src\policy\net.openvpn.v3.client.conf.in" />
+    <None Include="src\src\policy\net.openvpn.v3.conf.in" />
+    <None Include="src\src\policy\net.openvpn.v3.configuration.conf.in" />
+    <None Include="src\src\policy\net.openvpn.v3.log.conf.in" />
+    <None Include="src\src\policy\net.openvpn.v3.netcfg.conf.in" />
+    <None Include="src\src\policy\net.openvpn.v3.rules.in" />
+    <None Include="src\src\policy\net.openvpn.v3.sessions.conf.in" />
+    <None Include="src\src\policy\openvpn3-linux.pkla.in" />
+    <None Include="src\src\policy\syntax-check.sh" />
+    <None Include="src\src\python\openvpn3\__init__.py" />
+    <None Include="src\src\python\openvpn3\ConfigManager.py" />
+    <None Include="src\src\python\openvpn3\ConfigParser.py" />
+    <None Include="src\src\python\openvpn3\NetCfgManager.py" />
+    <None Include="src\src\python\openvpn3\SessionManager.py" />
+    <None Include="src\src\python\Makefile.am" />
+    <None Include="src\src\python\openvpn2" />
+    <None Include="src\src\python\openvpn3-as" />
+    <None Include="src\src\python\openvpn3-autoload" />
+    <None Include="src\src\selinux\Makefile.am" />
+    <None Include="src\src\selinux\openvpn3.fc" />
+    <None Include="src\src\selinux\openvpn3.if" />
+    <None Include="src\src\selinux\openvpn3.te" />
+    <None Include="src\src\selinux\openvpn3_service.fc" />
+    <None Include="src\src\selinux\openvpn3_service.if" />
+    <None Include="src\src\selinux\openvpn3_service.te" />
+    <None Include="src\src\service-autostart\Makefile.am" />
+    <None Include="src\src\service-autostart\net.openvpn.v3.backends.service.in" />
+    <None Include="src\src\service-autostart\net.openvpn.v3.configuration.service.in" />
+    <None Include="src\src\service-autostart\net.openvpn.v3.log.service.in" />
+    <None Include="src\src\service-autostart\net.openvpn.v3.netcfg.service.in" />
+    <None Include="src\src\service-autostart\net.openvpn.v3.sessions.service.in" />
+    <None Include="src\src\shell\bash-completion\gen-openvpn2-completion.py" />
+    <None Include="src\src\shell\bash-completion\openvpn3" />
+    <None Include="src\src\tests\dbus\netcfg-subscription-test" />
+    <None Include="src\src\tests\netcfg\net.openvpn.v3.netcfg-generic-access.conf" />
+    <None Include="src\src\tests\netcfg\README" />
+    <None Include="src\src\tests\python\configimport.py" />
+    <None Include="src\src\tests\python\configmgr-lookup-configname.py" />
+    <None Include="src\src\tests\python\genconfig.py" />
+    <None Include="src\src\tests\python\get-last-status.py" />
+    <None Include="src\src\tests\python\get-session-status.py" />
+    <None Include="src\src\tests\python\netcfg-cleanup" />
+    <None Include="src\src\tests\python\netcfg-netchg-subscription" />
+    <None Include="src\src\tests\python\ovpncli.py" />
+    <None Include="src\src\tests\python\start-tunnel.py" />
+    <None Include="src\src\tests\python\start-tunnel2.py" />
+    <None Include="src\src\tests\python\watch-status-change.py" />
+    <None Include="src\src\tests\stress\client.ovpn" />
+    <None Include="src\src\tests\stress\connect-disconnect-loop.sh" />
+    <None Include="src\src\tests\stress\server.conf" />
+    <None Include="src\.gitignore" />
+    <None Include="src\.gitmodules" />
+    <None Include="src\bootstrap.sh" />
+    <None Include="src\CLA.md" />
+    <None Include="src\configure.ac" />
+    <None Include="src\COPYRIGHT.md" />
+    <None Include="src\Makefile.am" />
+    <None Include="src\README.md" />
+    <None Include="src\update-version-m4.sh" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{9775FA73-A94F-45C3-9CBB-107AF20E1FAC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons">
+      <UniqueIdentifier>{046F3328-1A1A-4EE2-A413-1F80D88BCD48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\aws">
+      <UniqueIdentifier>{10F883FA-F715-40A4-944F-41882A10E026}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\aws\certs">
+      <UniqueIdentifier>{304501F0-2B35-4B29-80CF-40882E649C77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\aws\policy">
+      <UniqueIdentifier>{B69CB715-3CF4-415B-B459-E9EDDA9DE469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\aws\systemd">
+      <UniqueIdentifier>{CC1C5190-B2E0-4840-ABF6-6846E1EC4281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\contrib">
+      <UniqueIdentifier>{53B6D464-E5C2-4B86-A5B6-2E5DAE269165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\contrib\cmake-clion">
+      <UniqueIdentifier>{08296FB7-C822-4A07-89B8-F477C01CED41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\distro">
+      <UniqueIdentifier>{FC997F80-CD05-4F6C-9EF0-2D5F7A2695C7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\distro\systemd">
+      <UniqueIdentifier>{1B2B86D2-AB32-48B9-96E1-87DDF637A875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\docs">
+      <UniqueIdentifier>{2AFB9DBE-5F05-401E-A308-1C130FD8DEFA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\docs\dbus">
+      <UniqueIdentifier>{925C0240-144B-4D0F-8804-F246E9EE6901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\docs\man">
+      <UniqueIdentifier>{84EA9DE6-24E1-46E7-85A0-7251189697DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\doxygen">
+      <UniqueIdentifier>{8A8551CA-2724-4ED4-932B-FABAA983B67B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\m4">
+      <UniqueIdentifier>{9C4390C0-A27A-458C-96E9-E9E551D6E849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src">
+      <UniqueIdentifier>{C38C24E6-8936-478B-A21C-D77C4F51BA69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\client">
+      <UniqueIdentifier>{F3EF8C6A-4D95-415B-A3E8-F9A06C118A19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\common">
+      <UniqueIdentifier>{99F3B057-A02A-4C2F-9937-5A4956D0ED4B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\configmgr">
+      <UniqueIdentifier>{ECD6C2DC-8F87-40EF-9C81-AFFAE7CAA5D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\dbus">
+      <UniqueIdentifier>{435D49CF-5CCA-4886-AA7A-50234D9DD524}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\log">
+      <UniqueIdentifier>{9389EA72-0983-4B45-A08D-A90542A3D2D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\netcfg">
+      <UniqueIdentifier>{F9F32D91-B63E-4E7F-85A9-A68229935089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\netcfg\dns">
+      <UniqueIdentifier>{6A42ACBD-A6ED-4528-9938-3E8E73B0A39F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\ovpn3cli">
+      <UniqueIdentifier>{43A09122-27FE-439F-A4EB-45924EC8A587}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\ovpn3cli\commands">
+      <UniqueIdentifier>{E8D11EF2-51D4-45E0-9898-3CB35F91379B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\policy">
+      <UniqueIdentifier>{08464D57-A255-47E7-AE2A-FFBF3393691A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\python">
+      <UniqueIdentifier>{538BF932-7903-4930-86F3-36FFD5245D55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\python\openvpn3">
+      <UniqueIdentifier>{7DEF9886-7E10-4FDA-B407-5BA5183C42E5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\selinux">
+      <UniqueIdentifier>{3F6F9362-3E5B-4BC8-A113-9E6ACF12B71E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\service-autostart">
+      <UniqueIdentifier>{119A5AD3-BFB7-4A05-943C-EADE2A42ADA6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\sessionmgr">
+      <UniqueIdentifier>{D4DC1998-062E-40E4-AE91-A0B67A2CA026}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\shell">
+      <UniqueIdentifier>{D6971BFC-5EFF-45DD-BBC0-F1BEB0BB0773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\shell\bash-completion">
+      <UniqueIdentifier>{EC51A29C-7094-454D-9162-72A31309414F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\tests">
+      <UniqueIdentifier>{90FF267F-1752-4163-9059-AD78E68ACA1A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\tests\command-parser">
+      <UniqueIdentifier>{CBD88128-1CF4-484B-98F4-EC08C1198C8C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\tests\dbus">
+      <UniqueIdentifier>{7FE4DAE6-CB8C-41A2-85AC-A8493085EFFC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\tests\misc">
+      <UniqueIdentifier>{EF055C1A-9B18-457C-B6C6-21BDDC6F454A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\tests\netcfg">
+      <UniqueIdentifier>{FC09D977-720C-46AB-87A8-0A906B5ED5A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\tests\ovpn3-core">
+      <UniqueIdentifier>{CF3CF427-4B42-40E2-BE2E-0057C552DB0F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\tests\python">
+      <UniqueIdentifier>{1714200F-2F48-4599-9AB3-9ED7DC4AA503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\tests\stress">
+      <UniqueIdentifier>{DDB468DE-E770-4F18-9EB3-B2F9B33C7A57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\tests\unit">
+      <UniqueIdentifier>{AB1850A2-862D-4571-BFFA-4E2AFD1F04EB}</UniqueIdentifier>
+    </Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\src\client\backend-signals.hpp">
+      <Filter>src\src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\client\core-client.hpp">
+      <Filter>src\src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\client\core-client-netcfg.hpp">
+      <Filter>src\src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\client\statistics.hpp">
+      <Filter>src\src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\client\statusevent.hpp">
+      <Filter>src\src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\common\cmdargparser.hpp">
+      <Filter>src\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\common\cmdargparser-exceptions.hpp">
+      <Filter>src\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\common\configfileparser.hpp">
+      <Filter>src\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\common\core-extensions.hpp">
+      <Filter>src\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\common\lookup.hpp">
+      <Filter>src\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\common\machineid.hpp">
+      <Filter>src\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\common\open-uri.hpp">
+      <Filter>src\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\common\requiresqueue.hpp">
+      <Filter>src\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\common\timestamp.hpp">
+      <Filter>src\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\common\utils.hpp">
+      <Filter>src\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\configmgr\configmgr.hpp">
+      <Filter>src\src\configmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\configmgr\overrides.hpp">
+      <Filter>src\src\configmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\configmgr\proxy-configmgr.hpp">
+      <Filter>src\src\configmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\dbus\connection.hpp">
+      <Filter>src\src\dbus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\dbus\connection-creds.hpp">
+      <Filter>src\src\dbus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\dbus\constants.hpp">
+      <Filter>src\src\dbus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\dbus\core.hpp">
+      <Filter>src\src\dbus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\dbus\exceptions.hpp">
+      <Filter>src\src\dbus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\dbus\glibutils.hpp">
+      <Filter>src\src\dbus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\dbus\idlecheck.hpp">
+      <Filter>src\src\dbus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\dbus\object.hpp">
+      <Filter>src\src\dbus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\dbus\object-property.hpp">
+      <Filter>src\src\dbus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\dbus\path.hpp">
+      <Filter>src\src\dbus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\dbus\processwatch.hpp">
+      <Filter>src\src\dbus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\dbus\proxy.hpp">
+      <Filter>src\src\dbus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\dbus\requiresqueue-proxy.hpp">
+      <Filter>src\src\dbus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\dbus\signals.hpp">
+      <Filter>src\src\dbus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\log\ansicolours.hpp">
+      <Filter>src\src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\log\colourengine.hpp">
+      <Filter>src\src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\log\core-dbus-logbase.hpp">
+      <Filter>src\src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\log\dbus-log.hpp">
+      <Filter>src\src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\log\logevent.hpp">
+      <Filter>src\src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\log\logger.hpp">
+      <Filter>src\src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\log\log-helpers.hpp">
+      <Filter>src\src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\log\logwriter.hpp">
+      <Filter>src\src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\log\proxy-log.hpp">
+      <Filter>src\src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\log\service.hpp">
+      <Filter>src\src\log</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\dns\proxy-systemd-resolved.hpp">
+      <Filter>src\src\netcfg\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\dns\resolvconf-file.hpp">
+      <Filter>src\src\netcfg\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\dns\resolver-backend-interface.hpp">
+      <Filter>src\src\netcfg\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\dns\resolver-settings.hpp">
+      <Filter>src\src\netcfg\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\dns\settings-manager.hpp">
+      <Filter>src\src\netcfg\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\dns\systemd-resolved.hpp">
+      <Filter>src\src\netcfg\dns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\core-tunbuilder.hpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\netcfg.hpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\netcfg-changeevent.hpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\netcfg-changetype.hpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\netcfg-configfile.hpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\netcfg-dco.hpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\netcfg-device.hpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\netcfg-exception.hpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\netcfg-options.hpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\netcfg-signals.hpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\netcfg-subscriptions.hpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\netcfg\proxy-netcfg.hpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\ovpn3cli\commands\commands.hpp">
+      <Filter>src\src\ovpn3cli\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\ovpn3cli\arghelpers.hpp">
+      <Filter>src\src\ovpn3cli</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\ovpn3cli\ovpn3cli.hpp">
+      <Filter>src\src\ovpn3cli</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\sessionmgr\proxy-sessionmgr.hpp">
+      <Filter>src\src\sessionmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\sessionmgr\sessionmgr.hpp">
+      <Filter>src\src\sessionmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\sessionmgr\sessionmgr-events.hpp">
+      <Filter>src\src\sessionmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\sessionmgr\sessionmgr-exceptions.hpp">
+      <Filter>src\src\sessionmgr</Filter>
+    </ClInclude>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\addons\aws\openvpn3-service-aws.cpp">
+      <Filter>src\addons\aws</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\client\openvpn3-service-backendstart.cpp">
+      <Filter>src\src\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\client\openvpn3-service-client.cpp">
+      <Filter>src\src\client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\common\cmdargparser.cpp">
+      <Filter>src\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\common\configfileparser.cpp">
+      <Filter>src\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\common\lookup.cpp">
+      <Filter>src\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\common\machineid.cpp">
+      <Filter>src\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\common\open-uri.cpp">
+      <Filter>src\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\common\requiresqueue.cpp">
+      <Filter>src\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\common\timestamp.cpp">
+      <Filter>src\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\common\utils.cpp">
+      <Filter>src\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\configmgr\openvpn3-service-configmgr.cpp">
+      <Filter>src\src\configmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\configmgr\overrides.cpp">
+      <Filter>src\src\configmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\log\openvpn3-service-logger.cpp">
+      <Filter>src\src\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\netcfg\dns\proxy-systemd-resolved.cpp">
+      <Filter>src\src\netcfg\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\netcfg\dns\resolvconf-file.cpp">
+      <Filter>src\src\netcfg\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\netcfg\dns\resolver-settings.cpp">
+      <Filter>src\src\netcfg\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\netcfg\dns\settings-manager.cpp">
+      <Filter>src\src\netcfg\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\netcfg\dns\systemd-resolved.cpp">
+      <Filter>src\src\netcfg\dns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\netcfg\core-tunbuilder.cpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\netcfg\netcfg-changeevent.cpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\netcfg\netcfg-changetype.cpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\netcfg\netcfg-dco.cpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\netcfg\netcfg-subscriptions.cpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\netcfg\openvpn3-service-netcfg.cpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\netcfg\proxy-netcfg.cpp">
+      <Filter>src\src\netcfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\ovpn3cli\commands\config.cpp">
+      <Filter>src\src\ovpn3cli\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\ovpn3cli\commands\log.cpp">
+      <Filter>src\src\ovpn3cli\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\ovpn3cli\commands\log-service.cpp">
+      <Filter>src\src\ovpn3cli\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\ovpn3cli\commands\netcfg-service.cpp">
+      <Filter>src\src\ovpn3cli\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\ovpn3cli\commands\session.cpp">
+      <Filter>src\src\ovpn3cli\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\ovpn3cli\commands\sessionmgr-service.cpp">
+      <Filter>src\src\ovpn3cli\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\ovpn3cli\commands\variables.cpp">
+      <Filter>src\src\ovpn3cli\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\ovpn3cli\commands\version.cpp">
+      <Filter>src\src\ovpn3cli\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\ovpn3cli\arghelpers.cpp">
+      <Filter>src\src\ovpn3cli</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\ovpn3cli\openvpn3.cpp">
+      <Filter>src\src\ovpn3cli</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\ovpn3cli\openvpn3-admin.cpp">
+      <Filter>src\src\ovpn3cli</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\python\openvpn3\gen-python-constants.cpp">
+      <Filter>src\src\python\openvpn3</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\sessionmgr\openvpn3-service-sessionmgr.cpp">
+      <Filter>src\src\sessionmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\sessionmgr\sessionmgr-events.cpp">
+      <Filter>src\src\sessionmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\command-parser\cmdparser.cpp">
+      <Filter>src\src\tests\command-parser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\config-lock-down.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\config-override-selftest.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\conncreds.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\enable-logging.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\fetch-avail-config-paths.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\fetch-avail-session-paths.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\fetch-config.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\fetch-config2.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\get-acl.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\get-config-overrides.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\getconnectionstats.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\getlastlogevent.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\getlaststatus.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\get-service-version-prop.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\logevent-selftest.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\log-listener.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\log-listener2.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\logservice1.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\manager-lookupconfigname.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\netcfg-changeevent-selftest.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\netcfg-proxy-unit.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\netcfg-systemd-resolved-basic.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\proc-wait-for.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\proc-wait-for-pid.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\proxy-checkserviceavail.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\request-queue-client.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\request-queue-client2.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\request-queue-service.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\signal-listener.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\dbus\statusevent-selftest.cpp">
+      <Filter>src\src\tests\dbus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\misc\config-export-json-test.cpp">
+      <Filter>src\src\tests\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\misc\gettimestamp.cpp">
+      <Filter>src\src\tests\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\misc\json-config-import-test.cpp">
+      <Filter>src\src\tests\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\misc\log-prefix-selftest.cpp">
+      <Filter>src\src\tests\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\misc\logwriter-tests.cpp">
+      <Filter>src\src\tests\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\misc\lookup-tests.cpp">
+      <Filter>src\src\tests\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\misc\machineid-test.cpp">
+      <Filter>src\src\tests\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\misc\netcfg-dns-direct-file-selftest.cpp">
+      <Filter>src\src\tests\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\misc\open-uri-test.cpp">
+      <Filter>src\src\tests\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\misc\syslog-facility-mapping-test.cpp">
+      <Filter>src\src\tests\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\netcfg\cli.cpp">
+      <Filter>src\src\tests\netcfg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\ovpn3-core\profilemerge-optionlist.cpp">
+      <Filter>src\src\tests\ovpn3-core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\unit\configfileparser.cpp">
+      <Filter>src\src\tests\unit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\unit\dns-resolver-settings.cpp">
+      <Filter>src\src\tests\unit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\unit\dns-settings-manager-test.cpp">
+      <Filter>src\src\tests\unit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\unit\logevent.cpp">
+      <Filter>src\src\tests\unit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\unit\lookup.cpp">
+      <Filter>src\src\tests\unit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\unit\machine-id.cpp">
+      <Filter>src\src\tests\unit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\unit\netcfg-changeevent.cpp">
+      <Filter>src\src\tests\unit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\unit\sessionmgr-events.cpp">
+      <Filter>src\src\tests\unit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\unit\statusevent.cpp">
+      <Filter>src\src\tests\unit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\unit\syslog-facility-mapping.cpp">
+      <Filter>src\src\tests\unit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tests\unit\timestamp.cpp">
+      <Filter>src\src\tests\unit</Filter>
+    </ClCompile>
+
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\addons\aws\certs\af_south_1.crt">
+      <Filter>src\addons\aws\certs</Filter>
+    </None>
+    <None Include="src\addons\aws\certs\ap_east_1.crt">
+      <Filter>src\addons\aws\certs</Filter>
+    </None>
+    <None Include="src\addons\aws\certs\default.crt">
+      <Filter>src\addons\aws\certs</Filter>
+    </None>
+    <None Include="src\addons\aws\certs\eu_south_1.crt">
+      <Filter>src\addons\aws\certs</Filter>
+    </None>
+    <None Include="src\addons\aws\certs\me_south_1.crt">
+      <Filter>src\addons\aws\certs</Filter>
+    </None>
+    <None Include="src\addons\aws\certs\us_gov.crt">
+      <Filter>src\addons\aws\certs</Filter>
+    </None>
+    <None Include="src\addons\aws\policy\net.openvpn.v3.aws.conf.in">
+      <Filter>src\addons\aws\policy</Filter>
+    </None>
+    <None Include="src\addons\aws\systemd\openvpn3-aws.service.in">
+      <Filter>src\addons\aws\systemd</Filter>
+    </None>
+    <None Include="src\addons\aws\CMakeLists.txt">
+      <Filter>src\addons\aws</Filter>
+    </None>
+    <None Include="src\addons\aws\Makefile.am">
+      <Filter>src\addons\aws</Filter>
+    </None>
+    <None Include="src\contrib\cmake-clion\CMakeLists.txt">
+      <Filter>src\contrib\cmake-clion</Filter>
+    </None>
+    <None Include="src\contrib\cmake-clion\README.rst">
+      <Filter>src\contrib\cmake-clion</Filter>
+    </None>
+    <None Include="src\contrib\Jenkinsfile">
+      <Filter>src\contrib</Filter>
+    </None>
+    <None Include="src\distro\systemd\Makefile.am">
+      <Filter>src\distro\systemd</Filter>
+    </None>
+    <None Include="src\distro\systemd\openvpn3-autoload.service.in">
+      <Filter>src\distro\systemd</Filter>
+    </None>
+    <None Include="src\distro\systemd\openvpn3-session@.service.in">
+      <Filter>src\distro\systemd</Filter>
+    </None>
+    <None Include="src\distro\systemd\openvpn3-systemd">
+      <Filter>src\distro\systemd</Filter>
+    </None>
+    <None Include="src\docs\dbus\dbus-logging.md">
+      <Filter>src\docs\dbus</Filter>
+    </None>
+    <None Include="src\docs\dbus\dbus-overview.md">
+      <Filter>src\docs\dbus</Filter>
+    </None>
+    <None Include="src\docs\dbus\dbus-primer.md">
+      <Filter>src\docs\dbus</Filter>
+    </None>
+    <None Include="src\docs\dbus\dbus-service-net.openvpn.v3.backends.md">
+      <Filter>src\docs\dbus</Filter>
+    </None>
+    <None Include="src\docs\dbus\dbus-service-net.openvpn.v3.client.md">
+      <Filter>src\docs\dbus</Filter>
+    </None>
+    <None Include="src\docs\dbus\dbus-service-net.openvpn.v3.configuration.md">
+      <Filter>src\docs\dbus</Filter>
+    </None>
+    <None Include="src\docs\dbus\dbus-service-net.openvpn.v3.log.md">
+      <Filter>src\docs\dbus</Filter>
+    </None>
+    <None Include="src\docs\dbus\dbus-service-net.openvpn.v3.netcfg.md">
+      <Filter>src\docs\dbus</Filter>
+    </None>
+    <None Include="src\docs\dbus\dbus-service-net.openvpn.v3.sessions.md">
+      <Filter>src\docs\dbus</Filter>
+    </None>
+    <None Include="src\docs\man\Makefile.am">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn2.1.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3.1.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-admin.8.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-admin-log-service.8.rst.in">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-admin-netcfg-service.8.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-admin-sessionmgr-service.8.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-as.1.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-autoload.8.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-config-acl.1.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-config-dump.1.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-config-import.1.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-config-manage.1.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-config-remove.1.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-configs-list.1.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-linux.7.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-log.1.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-service-aws.8.rst.in">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-service-backendstart.8.rst.in">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-service-client.8.rst.in">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-service-configmgr.8.rst.in">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-service-logger.8.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-service-netcfg.8.rst.in">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-service-sessionmgr.8.rst.in">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-session-acl.1.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-session-auth.1.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-session-manage.1.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-sessions-list.1.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-session-start.1.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-session-stats.1.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\man\openvpn3-systemd.8.rst">
+      <Filter>src\docs\man</Filter>
+    </None>
+    <None Include="src\docs\coding-style.md">
+      <Filter>src\docs</Filter>
+    </None>
+    <None Include="src\docs\debugging.md">
+      <Filter>src\docs</Filter>
+    </None>
+    <None Include="src\docs\openvpn3-autoload.md">
+      <Filter>src\docs</Filter>
+    </None>
+    <None Include="src\doxygen\Makefile.am">
+      <Filter>src\doxygen</Filter>
+    </None>
+    <None Include="src\doxygen\openvpn3-linux.doxy.in">
+      <Filter>src\doxygen</Filter>
+    </None>
+    <None Include="src\m4\.keep">
+      <Filter>src\m4</Filter>
+    </None>
+    <None Include="src\m4\ax_cxx_compile_stdcxx.m4">
+      <Filter>src\m4</Filter>
+    </None>
+    <None Include="src\src\netcfg\dco-keyconfig.proto">
+      <Filter>src\src\netcfg</Filter>
+    </None>
+    <None Include="src\src\policy\Makefile.am">
+      <Filter>src\src\policy</Filter>
+    </None>
+    <None Include="src\src\policy\net.openvpn.v3.client.conf.in">
+      <Filter>src\src\policy</Filter>
+    </None>
+    <None Include="src\src\policy\net.openvpn.v3.conf.in">
+      <Filter>src\src\policy</Filter>
+    </None>
+    <None Include="src\src\policy\net.openvpn.v3.configuration.conf.in">
+      <Filter>src\src\policy</Filter>
+    </None>
+    <None Include="src\src\policy\net.openvpn.v3.log.conf.in">
+      <Filter>src\src\policy</Filter>
+    </None>
+    <None Include="src\src\policy\net.openvpn.v3.netcfg.conf.in">
+      <Filter>src\src\policy</Filter>
+    </None>
+    <None Include="src\src\policy\net.openvpn.v3.rules.in">
+      <Filter>src\src\policy</Filter>
+    </None>
+    <None Include="src\src\policy\net.openvpn.v3.sessions.conf.in">
+      <Filter>src\src\policy</Filter>
+    </None>
+    <None Include="src\src\policy\openvpn3-linux.pkla.in">
+      <Filter>src\src\policy</Filter>
+    </None>
+    <None Include="src\src\policy\syntax-check.sh">
+      <Filter>src\src\policy</Filter>
+    </None>
+    <None Include="src\src\python\openvpn3\__init__.py">
+      <Filter>src\src\python\openvpn3</Filter>
+    </None>
+    <None Include="src\src\python\openvpn3\ConfigManager.py">
+      <Filter>src\src\python\openvpn3</Filter>
+    </None>
+    <None Include="src\src\python\openvpn3\ConfigParser.py">
+      <Filter>src\src\python\openvpn3</Filter>
+    </None>
+    <None Include="src\src\python\openvpn3\NetCfgManager.py">
+      <Filter>src\src\python\openvpn3</Filter>
+    </None>
+    <None Include="src\src\python\openvpn3\SessionManager.py">
+      <Filter>src\src\python\openvpn3</Filter>
+    </None>
+    <None Include="src\src\python\Makefile.am">
+      <Filter>src\src\python</Filter>
+    </None>
+    <None Include="src\src\python\openvpn2">
+      <Filter>src\src\python</Filter>
+    </None>
+    <None Include="src\src\python\openvpn3-as">
+      <Filter>src\src\python</Filter>
+    </None>
+    <None Include="src\src\python\openvpn3-autoload">
+      <Filter>src\src\python</Filter>
+    </None>
+    <None Include="src\src\selinux\Makefile.am">
+      <Filter>src\src\selinux</Filter>
+    </None>
+    <None Include="src\src\selinux\openvpn3.fc">
+      <Filter>src\src\selinux</Filter>
+    </None>
+    <None Include="src\src\selinux\openvpn3.if">
+      <Filter>src\src\selinux</Filter>
+    </None>
+    <None Include="src\src\selinux\openvpn3.te">
+      <Filter>src\src\selinux</Filter>
+    </None>
+    <None Include="src\src\selinux\openvpn3_service.fc">
+      <Filter>src\src\selinux</Filter>
+    </None>
+    <None Include="src\src\selinux\openvpn3_service.if">
+      <Filter>src\src\selinux</Filter>
+    </None>
+    <None Include="src\src\selinux\openvpn3_service.te">
+      <Filter>src\src\selinux</Filter>
+    </None>
+    <None Include="src\src\service-autostart\Makefile.am">
+      <Filter>src\src\service-autostart</Filter>
+    </None>
+    <None Include="src\src\service-autostart\net.openvpn.v3.backends.service.in">
+      <Filter>src\src\service-autostart</Filter>
+    </None>
+    <None Include="src\src\service-autostart\net.openvpn.v3.configuration.service.in">
+      <Filter>src\src\service-autostart</Filter>
+    </None>
+    <None Include="src\src\service-autostart\net.openvpn.v3.log.service.in">
+      <Filter>src\src\service-autostart</Filter>
+    </None>
+    <None Include="src\src\service-autostart\net.openvpn.v3.netcfg.service.in">
+      <Filter>src\src\service-autostart</Filter>
+    </None>
+    <None Include="src\src\service-autostart\net.openvpn.v3.sessions.service.in">
+      <Filter>src\src\service-autostart</Filter>
+    </None>
+    <None Include="src\src\shell\bash-completion\gen-openvpn2-completion.py">
+      <Filter>src\src\shell\bash-completion</Filter>
+    </None>
+    <None Include="src\src\shell\bash-completion\openvpn3">
+      <Filter>src\src\shell\bash-completion</Filter>
+    </None>
+    <None Include="src\src\tests\dbus\netcfg-subscription-test">
+      <Filter>src\src\tests\dbus</Filter>
+    </None>
+    <None Include="src\src\tests\netcfg\net.openvpn.v3.netcfg-generic-access.conf">
+      <Filter>src\src\tests\netcfg</Filter>
+    </None>
+    <None Include="src\src\tests\netcfg\README">
+      <Filter>src\src\tests\netcfg</Filter>
+    </None>
+    <None Include="src\src\tests\python\configimport.py">
+      <Filter>src\src\tests\python</Filter>
+    </None>
+    <None Include="src\src\tests\python\configmgr-lookup-configname.py">
+      <Filter>src\src\tests\python</Filter>
+    </None>
+    <None Include="src\src\tests\python\genconfig.py">
+      <Filter>src\src\tests\python</Filter>
+    </None>
+    <None Include="src\src\tests\python\get-last-status.py">
+      <Filter>src\src\tests\python</Filter>
+    </None>
+    <None Include="src\src\tests\python\get-session-status.py">
+      <Filter>src\src\tests\python</Filter>
+    </None>
+    <None Include="src\src\tests\python\netcfg-cleanup">
+      <Filter>src\src\tests\python</Filter>
+    </None>
+    <None Include="src\src\tests\python\netcfg-netchg-subscription">
+      <Filter>src\src\tests\python</Filter>
+    </None>
+    <None Include="src\src\tests\python\ovpncli.py">
+      <Filter>src\src\tests\python</Filter>
+    </None>
+    <None Include="src\src\tests\python\start-tunnel.py">
+      <Filter>src\src\tests\python</Filter>
+    </None>
+    <None Include="src\src\tests\python\start-tunnel2.py">
+      <Filter>src\src\tests\python</Filter>
+    </None>
+    <None Include="src\src\tests\python\watch-status-change.py">
+      <Filter>src\src\tests\python</Filter>
+    </None>
+    <None Include="src\src\tests\stress\client.ovpn">
+      <Filter>src\src\tests\stress</Filter>
+    </None>
+    <None Include="src\src\tests\stress\connect-disconnect-loop.sh">
+      <Filter>src\src\tests\stress</Filter>
+    </None>
+    <None Include="src\src\tests\stress\server.conf">
+      <Filter>src\src\tests\stress</Filter>
+    </None>
+    <None Include="src\.gitignore">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\.gitmodules">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\bootstrap.sh">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\CLA.md">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\configure.ac">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\COPYRIGHT.md">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\Makefile.am">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\README.md">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\update-version-m4.sh">
+      <Filter>src</Filter>
+    </None>
+
+  </ItemGroup>
+</Project>

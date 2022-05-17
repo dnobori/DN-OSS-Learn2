@@ -1,0 +1,1611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{BDB92C2E-6DBE-47A6-B5F3-BFE7ED07E460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\.github">
+      <UniqueIdentifier>{646A3CD7-9AF8-440D-B22C-6F813A6BF0D8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\.github\workflows">
+      <UniqueIdentifier>{6A7E9F8D-1746-4E61-8DF5-F395158F6870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\.travis">
+      <UniqueIdentifier>{E2E24F67-F2A7-4FC0-B99E-B08BCC0DA506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\build">
+      <UniqueIdentifier>{8F876682-3678-430E-A835-F231DD83B21D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\build\msvc">
+      <UniqueIdentifier>{B350F5C5-5D0D-47BB-83DC-785F6B3520C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\build\msvc\msvc-generate">
+      <UniqueIdentifier>{D6070852-3A68-46F3-8CB2-005E58634A85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\contrib">
+      <UniqueIdentifier>{DFA3854C-D75C-43C8-8C23-F1397C67862E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\contrib\extract-crl">
+      <UniqueIdentifier>{60FEEF74-6F78-4A49-B022-A0600DB3B05F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\contrib\OCSP_check">
+      <UniqueIdentifier>{87D0667B-C3D3-497F-8A83-0E1AABBA37DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\contrib\openvpn-fwmarkroute-1.00">
+      <UniqueIdentifier>{09AFC9DB-9139-4100-BD8D-C8647C381BF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\contrib\pull-resolv-conf">
+      <UniqueIdentifier>{3A0BD431-B403-4F59-88F5-605EBDC59CB3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\contrib\vcpkg-ports">
+      <UniqueIdentifier>{E57C5924-F18E-40C9-88A1-D723B593E403}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\contrib\vcpkg-ports\pkcs11-helper">
+      <UniqueIdentifier>{D82FD66D-FDF7-42AE-B060-39BB3B032B30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\contrib\vcpkg-triplets">
+      <UniqueIdentifier>{83B723C6-56CB-4B4B-BF44-5289CC0427FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\debug">
+      <UniqueIdentifier>{9180D79C-02C7-41BC-BF4C-3C28B2D605B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\dev-tools">
+      <UniqueIdentifier>{2F76E2A3-5232-4CDC-B28A-F1DB9D6CD3B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\distro">
+      <UniqueIdentifier>{B2F44FDD-60E4-4D9B-AB13-A31027C0BD6F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\distro\systemd">
+      <UniqueIdentifier>{19D3B885-E676-40BB-923D-332E8060F33A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\doc">
+      <UniqueIdentifier>{782DE9C8-27B7-4988-972A-279454BA9D6B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\doc\doxygen">
+      <UniqueIdentifier>{6435BCB4-08C4-4F6F-A3A4-ABA82F2284E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\doc\man-sections">
+      <UniqueIdentifier>{2032BBCC-CBB3-45E9-B539-21790015E987}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\doc\tests">
+      <UniqueIdentifier>{8B84E229-2A96-4420-BE88-334C76A581E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include">
+      <UniqueIdentifier>{CA1DC512-3ED7-44E2-AD89-51F7886136B4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\m4">
+      <UniqueIdentifier>{913F12FF-80AF-4E90-A98D-BA0CBE96757B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sample">
+      <UniqueIdentifier>{52078172-C99F-4E39-B881-1D14694BF2D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sample\sample-config-files">
+      <UniqueIdentifier>{DF92A30A-13F3-40E6-BD81-5370D5F0393A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sample\sample-keys">
+      <UniqueIdentifier>{B38533DF-12AD-4E30-A1EA-D81333C6209D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sample\sample-plugins">
+      <UniqueIdentifier>{81FD10AA-1F92-4141-BAAD-4BF94AF171BA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sample\sample-plugins\client-connect">
+      <UniqueIdentifier>{E92FD641-7790-4033-8ED0-8EAADA5F4084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sample\sample-plugins\defer">
+      <UniqueIdentifier>{21A6C74C-5FE2-4F37-A466-AAF4555C0832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sample\sample-plugins\keying-material-exporter-demo">
+      <UniqueIdentifier>{A19F8748-1385-4AE2-AFD9-F078B6E545FD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sample\sample-plugins\log">
+      <UniqueIdentifier>{07BD2F0A-B5AC-4DB8-95FC-7E39AD4355E9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sample\sample-plugins\simple">
+      <UniqueIdentifier>{EEB897B9-8884-4470-A832-DEFC7D203CDE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sample\sample-scripts">
+      <UniqueIdentifier>{87D1E3BF-5587-48BE-8AA8-C2F95D5ED8DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sample\sample-windows">
+      <UniqueIdentifier>{EFE6B753-A91D-42A3-A409-D4E52256F322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src">
+      <UniqueIdentifier>{5BD74516-3EA9-48A4-AE50-82B5B3A49D06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\compat">
+      <UniqueIdentifier>{E37072A7-008A-40A1-ACBB-B38BD37AFC8B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\openvpn">
+      <UniqueIdentifier>{561E6F08-835F-452D-B3D2-795D03276241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\openvpnmsica">
+      <UniqueIdentifier>{AE988B8D-A82E-4AFA-B491-ECC5987CA0E5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\openvpnserv">
+      <UniqueIdentifier>{C84BA44A-6C63-4D9F-BB80-7ADE4F938F16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\plugins">
+      <UniqueIdentifier>{F8E4694F-04E0-4F3F-A8F5-EC895352BADA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\plugins\auth-pam">
+      <UniqueIdentifier>{2F8F66F4-7784-47A1-81D8-435BE427EEEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\plugins\down-root">
+      <UniqueIdentifier>{1DBE9526-BB94-4B5E-9C83-ED91DCE2DA9D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\tapctl">
+      <UniqueIdentifier>{DD969FEF-D410-48CB-8D9E-51F6EDE684EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests">
+      <UniqueIdentifier>{6F73DE13-A3C0-410C-8E3F-8C20C345D0F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\unit_tests">
+      <UniqueIdentifier>{9EC3A79B-2D49-438E-B542-767F5C985170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\unit_tests\engine-key">
+      <UniqueIdentifier>{86DADFB6-4EBF-4407-9939-CEC7C1E12677}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\unit_tests\example_test">
+      <UniqueIdentifier>{5D13D5C9-8BAA-4AD5-AF50-550AEF057E02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\unit_tests\openvpn">
+      <UniqueIdentifier>{96875BD4-1BBB-43C3-84E6-A3AFF9A7CB36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\unit_tests\plugins">
+      <UniqueIdentifier>{962BCC96-A82D-4100-8A23-7C81000E6437}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\tests\unit_tests\plugins\auth-pam">
+      <UniqueIdentifier>{8C6D55F8-A485-4D22-B408-45DDCD28C0AB}</UniqueIdentifier>
+    </Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\doc\doxygen\doc_compression.h">
+      <Filter>src\doc\doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\doc\doxygen\doc_control_processor.h">
+      <Filter>src\doc\doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\doc\doxygen\doc_control_tls.h">
+      <Filter>src\doc\doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\doc\doxygen\doc_data_control.h">
+      <Filter>src\doc\doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\doc\doxygen\doc_data_crypto.h">
+      <Filter>src\doc\doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\doc\doxygen\doc_eventloop.h">
+      <Filter>src\doc\doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\doc\doxygen\doc_external_multiplexer.h">
+      <Filter>src\doc\doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\doc\doxygen\doc_fragmentation.h">
+      <Filter>src\doc\doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\doc\doxygen\doc_internal_multiplexer.h">
+      <Filter>src\doc\doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\doc\doxygen\doc_key_generation.h">
+      <Filter>src\doc\doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\doc\doxygen\doc_mainpage.h">
+      <Filter>src\doc\doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\doc\doxygen\doc_memory_management.h">
+      <Filter>src\doc\doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\doc\doxygen\doc_protocol_overview.h">
+      <Filter>src\doc\doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\doc\doxygen\doc_reliable.h">
+      <Filter>src\doc\doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\doc\doxygen\doc_tunnel_state.h">
+      <Filter>src\doc\doxygen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\openvpn-msg.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\compat\compat.h">
+      <Filter>src\src\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\compat\compat-versionhelpers.h">
+      <Filter>src\src\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\argv.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\auth_token.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\base64.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\basic.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\block_dns.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\buffer.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\circ_list.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\clinat.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\common.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\comp.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\comp-lz4.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\console.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\crypto.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\crypto_backend.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\crypto_mbedtls.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\crypto_openssl.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\cryptoapi.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\dhcp.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\dns.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\env_set.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\errlevel.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\error.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\event.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\fdmisc.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\forward.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\fragment.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\gremlin.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\helper.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\httpdigest.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\init.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\integer.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\interval.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\list.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\lladdr.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\lzo.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\manage.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\mbuf.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\memdbg.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\misc.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\mroute.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\mss.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\mstats.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\mtcp.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\mtu.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\mudp.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\multi.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\networking.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\networking_iproute2.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\networking_sitnl.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\ntlm.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\occ.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\openssl_compat.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\openvpn.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\options.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\otime.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\packet_id.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\perf.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\ping.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\pkcs11.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\pkcs11_backend.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\platform.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\plugin.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\pool.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\proto.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\proxy.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\ps.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\push.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\pushlist.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\reliable.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\ring_buffer.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\route.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\run_command.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\schedule.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\session_id.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\shaper.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\sig.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\socket.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\socks.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\ssl.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\ssl_backend.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\ssl_common.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\ssl_mbedtls.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\ssl_ncp.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\ssl_openssl.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\ssl_pkt.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\ssl_util.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\ssl_verify.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\ssl_verify_backend.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\ssl_verify_mbedtls.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\ssl_verify_openssl.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\status.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\syshead.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\tls_crypt.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\tun.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\vlan.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\win32.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\win32-util.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpn\xkey_common.h">
+      <Filter>src\src\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpnmsica\msica_arg.h">
+      <Filter>src\src\openvpnmsica</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpnmsica\msiex.h">
+      <Filter>src\src\openvpnmsica</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpnmsica\openvpnmsica.h">
+      <Filter>src\src\openvpnmsica</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpnserv\service.h">
+      <Filter>src\src\openvpnserv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\openvpnserv\validate.h">
+      <Filter>src\src\openvpnserv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\plugins\auth-pam\pamdl.h">
+      <Filter>src\src\plugins\auth-pam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\plugins\auth-pam\utils.h">
+      <Filter>src\src\plugins\auth-pam</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\tapctl\basic.h">
+      <Filter>src\src\tapctl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\tapctl\error.h">
+      <Filter>src\src\tapctl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\tapctl\tap.h">
+      <Filter>src\src\tapctl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\unit_tests\openvpn\mock_msg.h">
+      <Filter>src\tests\unit_tests\openvpn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config-msvc.h">
+      <Filter>src</Filter>
+    </ClInclude>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\sample\sample-plugins\client-connect\sample-client-connect.c">
+      <Filter>src\sample\sample-plugins\client-connect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sample\sample-plugins\defer\multi-auth.c">
+      <Filter>src\sample\sample-plugins\defer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sample\sample-plugins\keying-material-exporter-demo\keyingmaterialexporter.c">
+      <Filter>src\sample\sample-plugins\keying-material-exporter-demo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sample\sample-plugins\log\log.c">
+      <Filter>src\sample\sample-plugins\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sample\sample-plugins\log\log_v3.c">
+      <Filter>src\sample\sample-plugins\log</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sample\sample-plugins\simple\base64.c">
+      <Filter>src\sample\sample-plugins\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sample\sample-plugins\simple\simple.c">
+      <Filter>src\sample\sample-plugins\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\compat\compat-basename.c">
+      <Filter>src\src\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\compat\compat-daemon.c">
+      <Filter>src\src\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\compat\compat-dirname.c">
+      <Filter>src\src\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\compat\compat-gettimeofday.c">
+      <Filter>src\src\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\compat\compat-strsep.c">
+      <Filter>src\src\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\argv.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\auth_token.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\base64.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\block_dns.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\buffer.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\clinat.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\comp.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\comp-lz4.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\compstub.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\console.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\console_builtin.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\console_systemd.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\crypto.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\crypto_mbedtls.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\crypto_openssl.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\cryptoapi.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\dhcp.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\dns.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\env_set.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\error.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\event.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\fdmisc.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\forward.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\fragment.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\gremlin.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\helper.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\httpdigest.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\init.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\interval.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\list.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\lladdr.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\lzo.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\manage.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\mbuf.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\misc.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\mroute.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\mss.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\mstats.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\mtcp.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\mtu.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\mudp.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\multi.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\networking_iproute2.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\networking_sitnl.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\ntlm.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\occ.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\openvpn.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\options.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\otime.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\packet_id.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\perf.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\ping.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\pkcs11.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\pkcs11_mbedtls.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\pkcs11_openssl.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\platform.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\plugin.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\pool.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\proto.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\proxy.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\ps.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\push.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\reliable.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\route.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\run_command.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\schedule.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\session_id.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\shaper.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\sig.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\socket.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\socks.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\ssl.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\ssl_mbedtls.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\ssl_ncp.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\ssl_openssl.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\ssl_pkt.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\ssl_util.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\ssl_verify.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\ssl_verify_mbedtls.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\ssl_verify_openssl.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\status.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\tls_crypt.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\tun.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\vlan.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\win32.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\win32-util.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\xkey_helper.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpn\xkey_provider.c">
+      <Filter>src\src\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpnmsica\dllmain.c">
+      <Filter>src\src\openvpnmsica</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpnmsica\msica_arg.c">
+      <Filter>src\src\openvpnmsica</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpnmsica\msiex.c">
+      <Filter>src\src\openvpnmsica</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpnmsica\openvpnmsica.c">
+      <Filter>src\src\openvpnmsica</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpnserv\common.c">
+      <Filter>src\src\openvpnserv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpnserv\interactive.c">
+      <Filter>src\src\openvpnserv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpnserv\service.c">
+      <Filter>src\src\openvpnserv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\openvpnserv\validate.c">
+      <Filter>src\src\openvpnserv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\plugins\auth-pam\auth-pam.c">
+      <Filter>src\src\plugins\auth-pam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\plugins\auth-pam\pamdl.c">
+      <Filter>src\src\plugins\auth-pam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\plugins\auth-pam\utils.c">
+      <Filter>src\src\plugins\auth-pam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\plugins\down-root\down-root.c">
+      <Filter>src\src\plugins\down-root</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tapctl\error.c">
+      <Filter>src\src\tapctl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tapctl\main.c">
+      <Filter>src\src\tapctl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tapctl\tap.c">
+      <Filter>src\src\tapctl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\unit_tests\engine-key\libtestengine.c">
+      <Filter>src\tests\unit_tests\engine-key</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\unit_tests\example_test\test.c">
+      <Filter>src\tests\unit_tests\example_test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\unit_tests\example_test\test2.c">
+      <Filter>src\tests\unit_tests\example_test</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\unit_tests\openvpn\mock_get_random.c">
+      <Filter>src\tests\unit_tests\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\unit_tests\openvpn\mock_msg.c">
+      <Filter>src\tests\unit_tests\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\unit_tests\openvpn\test_argv.c">
+      <Filter>src\tests\unit_tests\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\unit_tests\openvpn\test_auth_token.c">
+      <Filter>src\tests\unit_tests\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\unit_tests\openvpn\test_buffer.c">
+      <Filter>src\tests\unit_tests\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\unit_tests\openvpn\test_crypto.c">
+      <Filter>src\tests\unit_tests\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\unit_tests\openvpn\test_misc.c">
+      <Filter>src\tests\unit_tests\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\unit_tests\openvpn\test_ncp.c">
+      <Filter>src\tests\unit_tests\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\unit_tests\openvpn\test_networking.c">
+      <Filter>src\tests\unit_tests\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\unit_tests\openvpn\test_packet_id.c">
+      <Filter>src\tests\unit_tests\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\unit_tests\openvpn\test_pkt.c">
+      <Filter>src\tests\unit_tests\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\unit_tests\openvpn\test_provider.c">
+      <Filter>src\tests\unit_tests\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\unit_tests\openvpn\test_tls_crypt.c">
+      <Filter>src\tests\unit_tests\openvpn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\unit_tests\plugins\auth-pam\test_search_and_replace.c">
+      <Filter>src\tests\unit_tests\plugins\auth-pam</Filter>
+    </ClCompile>
+
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\.github\workflows\build.yaml">
+      <Filter>src\.github\workflows</Filter>
+    </None>
+    <None Include="src\.github\PULL_REQUEST_TEMPLATE.md">
+      <Filter>src\.github</Filter>
+    </None>
+    <None Include="src\.travis\build-check.sh">
+      <Filter>src\.travis</Filter>
+    </None>
+    <None Include="src\.travis\build-deps.sh">
+      <Filter>src\.travis</Filter>
+    </None>
+    <None Include="src\.travis\coverity.sh">
+      <Filter>src\.travis</Filter>
+    </None>
+    <None Include="src\build\msvc\msvc-generate\Makefile.am">
+      <Filter>src\build\msvc\msvc-generate</Filter>
+    </None>
+    <None Include="src\build\msvc\msvc-generate\Makefile.mak">
+      <Filter>src\build\msvc\msvc-generate</Filter>
+    </None>
+    <None Include="src\build\msvc\msvc-generate\msvc-generate.js">
+      <Filter>src\build\msvc\msvc-generate</Filter>
+    </None>
+    <None Include="src\build\msvc\msvc-generate\msvc-generate.vcxproj">
+      <Filter>src\build\msvc\msvc-generate</Filter>
+    </None>
+    <None Include="src\build\msvc\msvc-generate\version.m4.in">
+      <Filter>src\build\msvc\msvc-generate</Filter>
+    </None>
+    <None Include="src\build\msvc\Makefile.am">
+      <Filter>src\build\msvc</Filter>
+    </None>
+    <None Include="src\build\ltrc.inc">
+      <Filter>src\build</Filter>
+    </None>
+    <None Include="src\build\Makefile.am">
+      <Filter>src\build</Filter>
+    </None>
+    <None Include="src\contrib\extract-crl\extractcrl.py">
+      <Filter>src\contrib\extract-crl</Filter>
+    </None>
+    <None Include="src\contrib\OCSP_check\OCSP_check.sh">
+      <Filter>src\contrib\OCSP_check</Filter>
+    </None>
+    <None Include="src\contrib\openvpn-fwmarkroute-1.00\fwmarkroute.down">
+      <Filter>src\contrib\openvpn-fwmarkroute-1.00</Filter>
+    </None>
+    <None Include="src\contrib\openvpn-fwmarkroute-1.00\fwmarkroute.up">
+      <Filter>src\contrib\openvpn-fwmarkroute-1.00</Filter>
+    </None>
+    <None Include="src\contrib\openvpn-fwmarkroute-1.00\README">
+      <Filter>src\contrib\openvpn-fwmarkroute-1.00</Filter>
+    </None>
+    <None Include="src\contrib\pull-resolv-conf\client.down">
+      <Filter>src\contrib\pull-resolv-conf</Filter>
+    </None>
+    <None Include="src\contrib\pull-resolv-conf\client.up">
+      <Filter>src\contrib\pull-resolv-conf</Filter>
+    </None>
+    <None Include="src\contrib\vcpkg-ports\pkcs11-helper\0001-nmake-compatibility-with-vcpkg-nmake.patch">
+      <Filter>src\contrib\vcpkg-ports\pkcs11-helper</Filter>
+    </None>
+    <None Include="src\contrib\vcpkg-ports\pkcs11-helper\0002-config-w32-vc.h.in-indicate-OpenSSL.patch">
+      <Filter>src\contrib\vcpkg-ports\pkcs11-helper</Filter>
+    </None>
+    <None Include="src\contrib\vcpkg-ports\pkcs11-helper\CONTROL">
+      <Filter>src\contrib\vcpkg-ports\pkcs11-helper</Filter>
+    </None>
+    <None Include="src\contrib\vcpkg-ports\pkcs11-helper\pkcs11-helper-001-RFC7512.patch">
+      <Filter>src\contrib\vcpkg-ports\pkcs11-helper</Filter>
+    </None>
+    <None Include="src\contrib\vcpkg-ports\pkcs11-helper\portfile.cmake">
+      <Filter>src\contrib\vcpkg-ports\pkcs11-helper</Filter>
+    </None>
+    <None Include="src\contrib\vcpkg-triplets\arm64-windows-ovpn.cmake">
+      <Filter>src\contrib\vcpkg-triplets</Filter>
+    </None>
+    <None Include="src\contrib\vcpkg-triplets\x64-windows-ovpn.cmake">
+      <Filter>src\contrib\vcpkg-triplets</Filter>
+    </None>
+    <None Include="src\contrib\vcpkg-triplets\x86-windows-ovpn.cmake">
+      <Filter>src\contrib\vcpkg-triplets</Filter>
+    </None>
+    <None Include="src\contrib\multilevel-init.patch">
+      <Filter>src\contrib</Filter>
+    </None>
+    <None Include="src\contrib\README">
+      <Filter>src\contrib</Filter>
+    </None>
+    <None Include="src\debug\doval">
+      <Filter>src\debug</Filter>
+    </None>
+    <None Include="src\debug\dovalns">
+      <Filter>src\debug</Filter>
+    </None>
+    <None Include="src\debug\valgrind-suppress">
+      <Filter>src\debug</Filter>
+    </None>
+    <None Include="src\dev-tools\gen-release-tarballs.sh">
+      <Filter>src\dev-tools</Filter>
+    </None>
+    <None Include="src\dev-tools\git-pre-commit-uncrustify.sh">
+      <Filter>src\dev-tools</Filter>
+    </None>
+    <None Include="src\dev-tools\reformat-all.sh">
+      <Filter>src\dev-tools</Filter>
+    </None>
+    <None Include="src\dev-tools\special-files.lst">
+      <Filter>src\dev-tools</Filter>
+    </None>
+    <None Include="src\dev-tools\uncrustify.conf">
+      <Filter>src\dev-tools</Filter>
+    </None>
+    <None Include="src\dev-tools\update-copyright.sh">
+      <Filter>src\dev-tools</Filter>
+    </None>
+    <None Include="src\distro\systemd\Makefile.am">
+      <Filter>src\distro\systemd</Filter>
+    </None>
+    <None Include="src\distro\systemd\openvpn-client@.service.in">
+      <Filter>src\distro\systemd</Filter>
+    </None>
+    <None Include="src\distro\systemd\openvpn-server@.service.in">
+      <Filter>src\distro\systemd</Filter>
+    </None>
+    <None Include="src\distro\systemd\README.systemd">
+      <Filter>src\distro\systemd</Filter>
+    </None>
+    <None Include="src\distro\systemd\tmpfiles-openvpn.conf">
+      <Filter>src\distro\systemd</Filter>
+    </None>
+    <None Include="src\distro\Makefile.am">
+      <Filter>src\distro</Filter>
+    </None>
+    <None Include="src\doc\doxygen\Makefile.am">
+      <Filter>src\doc\doxygen</Filter>
+    </None>
+    <None Include="src\doc\doxygen\openvpn.doxyfile.in">
+      <Filter>src\doc\doxygen</Filter>
+    </None>
+    <None Include="src\doc\man-sections\advanced-options.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\cipher-negotiation.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\client-options.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\connection-profiles.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\encryption-options.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\example-fingerprint.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\examples.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\generic-options.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\inline-files.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\link-options.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\log-options.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\management-options.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\network-config.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\pkcs11-options.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\plugin-options.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\protocol-options.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\proxy-options.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\renegotiation.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\script-options.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\server-options.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\signals.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\tls-options.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\unsupported-options.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\virtual-routing-and-forwarding.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\vpn-network-options.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\man-sections\windows-options.rst">
+      <Filter>src\doc\man-sections</Filter>
+    </None>
+    <None Include="src\doc\tests\authentication-plugins.md">
+      <Filter>src\doc\tests</Filter>
+    </None>
+    <None Include="src\doc\android.txt">
+      <Filter>src\doc</Filter>
+    </None>
+    <None Include="src\doc\gui-notes.txt">
+      <Filter>src\doc</Filter>
+    </None>
+    <None Include="src\doc\interactive-service-notes.rst">
+      <Filter>src\doc</Filter>
+    </None>
+    <None Include="src\doc\keying-material-exporter.txt">
+      <Filter>src\doc</Filter>
+    </None>
+    <None Include="src\doc\Makefile.am">
+      <Filter>src\doc</Filter>
+    </None>
+    <None Include="src\doc\management-notes.txt">
+      <Filter>src\doc</Filter>
+    </None>
+    <None Include="src\doc\openvpn.8.rst">
+      <Filter>src\doc</Filter>
+    </None>
+    <None Include="src\doc\openvpn-examples.5.rst">
+      <Filter>src\doc</Filter>
+    </None>
+    <None Include="src\doc\README.man">
+      <Filter>src\doc</Filter>
+    </None>
+    <None Include="src\doc\README.plugins">
+      <Filter>src\doc</Filter>
+    </None>
+    <None Include="src\doc\tls-crypt-v2.txt">
+      <Filter>src\doc</Filter>
+    </None>
+    <None Include="src\include\Makefile.am">
+      <Filter>src\include</Filter>
+    </None>
+    <None Include="src\include\openvpn-plugin.h.in">
+      <Filter>src\include</Filter>
+    </None>
+    <None Include="src\m4\.keep">
+      <Filter>src\m4</Filter>
+    </None>
+    <None Include="src\m4\ax_socklen_t.m4">
+      <Filter>src\m4</Filter>
+    </None>
+    <None Include="src\m4\pkg.m4">
+      <Filter>src\m4</Filter>
+    </None>
+    <None Include="src\sample\sample-config-files\client.conf">
+      <Filter>src\sample\sample-config-files</Filter>
+    </None>
+    <None Include="src\sample\sample-config-files\firewall.sh">
+      <Filter>src\sample\sample-config-files</Filter>
+    </None>
+    <None Include="src\sample\sample-config-files\home.up">
+      <Filter>src\sample\sample-config-files</Filter>
+    </None>
+    <None Include="src\sample\sample-config-files\loopback-client">
+      <Filter>src\sample\sample-config-files</Filter>
+    </None>
+    <None Include="src\sample\sample-config-files\loopback-server">
+      <Filter>src\sample\sample-config-files</Filter>
+    </None>
+    <None Include="src\sample\sample-config-files\office.up">
+      <Filter>src\sample\sample-config-files</Filter>
+    </None>
+    <None Include="src\sample\sample-config-files\openvpn-shutdown.sh">
+      <Filter>src\sample\sample-config-files</Filter>
+    </None>
+    <None Include="src\sample\sample-config-files\openvpn-startup.sh">
+      <Filter>src\sample\sample-config-files</Filter>
+    </None>
+    <None Include="src\sample\sample-config-files\README">
+      <Filter>src\sample\sample-config-files</Filter>
+    </None>
+    <None Include="src\sample\sample-config-files\server.conf">
+      <Filter>src\sample\sample-config-files</Filter>
+    </None>
+    <None Include="src\sample\sample-config-files\tls-home.conf">
+      <Filter>src\sample\sample-config-files</Filter>
+    </None>
+    <None Include="src\sample\sample-config-files\tls-office.conf">
+      <Filter>src\sample\sample-config-files</Filter>
+    </None>
+    <None Include="src\sample\sample-keys\ca.crt">
+      <Filter>src\sample\sample-keys</Filter>
+    </None>
+    <None Include="src\sample\sample-keys\ca.key">
+      <Filter>src\sample\sample-keys</Filter>
+    </None>
+    <None Include="src\sample\sample-keys\client.crt">
+      <Filter>src\sample\sample-keys</Filter>
+    </None>
+    <None Include="src\sample\sample-keys\client.key">
+      <Filter>src\sample\sample-keys</Filter>
+    </None>
+    <None Include="src\sample\sample-keys\client.p12">
+      <Filter>src\sample\sample-keys</Filter>
+    </None>
+    <None Include="src\sample\sample-keys\client-ec.crt">
+      <Filter>src\sample\sample-keys</Filter>
+    </None>
+    <None Include="src\sample\sample-keys\client-ec.key">
+      <Filter>src\sample\sample-keys</Filter>
+    </None>
+    <None Include="src\sample\sample-keys\client-pass.key">
+      <Filter>src\sample\sample-keys</Filter>
+    </None>
+    <None Include="src\sample\sample-keys\dh2048.pem">
+      <Filter>src\sample\sample-keys</Filter>
+    </None>
+    <None Include="src\sample\sample-keys\gen-sample-keys.sh">
+      <Filter>src\sample\sample-keys</Filter>
+    </None>
+    <None Include="src\sample\sample-keys\openssl.cnf">
+      <Filter>src\sample\sample-keys</Filter>
+    </None>
+    <None Include="src\sample\sample-keys\README">
+      <Filter>src\sample\sample-keys</Filter>
+    </None>
+    <None Include="src\sample\sample-keys\server.crt">
+      <Filter>src\sample\sample-keys</Filter>
+    </None>
+    <None Include="src\sample\sample-keys\server.key">
+      <Filter>src\sample\sample-keys</Filter>
+    </None>
+    <None Include="src\sample\sample-keys\server-ec.crt">
+      <Filter>src\sample\sample-keys</Filter>
+    </None>
+    <None Include="src\sample\sample-keys\server-ec.key">
+      <Filter>src\sample\sample-keys</Filter>
+    </None>
+    <None Include="src\sample\sample-keys\ta.key">
+      <Filter>src\sample\sample-keys</Filter>
+    </None>
+    <None Include="src\sample\sample-plugins\client-connect\README">
+      <Filter>src\sample\sample-plugins\client-connect</Filter>
+    </None>
+    <None Include="src\sample\sample-plugins\defer\winbuild">
+      <Filter>src\sample\sample-plugins\defer</Filter>
+    </None>
+    <None Include="src\sample\sample-plugins\keying-material-exporter-demo\client.ovpn">
+      <Filter>src\sample\sample-plugins\keying-material-exporter-demo</Filter>
+    </None>
+    <None Include="src\sample\sample-plugins\keying-material-exporter-demo\http-client.py">
+      <Filter>src\sample\sample-plugins\keying-material-exporter-demo</Filter>
+    </None>
+    <None Include="src\sample\sample-plugins\keying-material-exporter-demo\http-server.py">
+      <Filter>src\sample\sample-plugins\keying-material-exporter-demo</Filter>
+    </None>
+    <None Include="src\sample\sample-plugins\keying-material-exporter-demo\README">
+      <Filter>src\sample\sample-plugins\keying-material-exporter-demo</Filter>
+    </None>
+    <None Include="src\sample\sample-plugins\keying-material-exporter-demo\server.ovpn">
+      <Filter>src\sample\sample-plugins\keying-material-exporter-demo</Filter>
+    </None>
+    <None Include="src\sample\sample-plugins\log\winbuild">
+      <Filter>src\sample\sample-plugins\log</Filter>
+    </None>
+    <None Include="src\sample\sample-plugins\simple\simple.def">
+      <Filter>src\sample\sample-plugins\simple</Filter>
+    </None>
+    <None Include="src\sample\sample-plugins\simple\winbuild">
+      <Filter>src\sample\sample-plugins\simple</Filter>
+    </None>
+    <None Include="src\sample\sample-plugins\Makefile.am">
+      <Filter>src\sample\sample-plugins</Filter>
+    </None>
+    <None Include="src\sample\sample-plugins\Makefile.plugins">
+      <Filter>src\sample\sample-plugins</Filter>
+    </None>
+    <None Include="src\sample\sample-plugins\README">
+      <Filter>src\sample\sample-plugins</Filter>
+    </None>
+    <None Include="src\sample\sample-scripts\auth-pam.pl">
+      <Filter>src\sample\sample-scripts</Filter>
+    </None>
+    <None Include="src\sample\sample-scripts\bridge-start">
+      <Filter>src\sample\sample-scripts</Filter>
+    </None>
+    <None Include="src\sample\sample-scripts\bridge-stop">
+      <Filter>src\sample\sample-scripts</Filter>
+    </None>
+    <None Include="src\sample\sample-scripts\ucn.pl">
+      <Filter>src\sample\sample-scripts</Filter>
+    </None>
+    <None Include="src\sample\sample-scripts\verify-cn">
+      <Filter>src\sample\sample-scripts</Filter>
+    </None>
+    <None Include="src\sample\sample-windows\sample.ovpn">
+      <Filter>src\sample\sample-windows</Filter>
+    </None>
+    <None Include="src\sample\Makefile.am">
+      <Filter>src\sample</Filter>
+    </None>
+    <None Include="src\src\compat\compat.vcxproj">
+      <Filter>src\src\compat</Filter>
+    </None>
+    <None Include="src\src\compat\compat.vcxproj.filters">
+      <Filter>src\src\compat</Filter>
+    </None>
+    <None Include="src\src\compat\Debug.props">
+      <Filter>src\src\compat</Filter>
+    </None>
+    <None Include="src\src\compat\Makefile.am">
+      <Filter>src\src\compat</Filter>
+    </None>
+    <None Include="src\src\compat\PropertySheet.props">
+      <Filter>src\src\compat</Filter>
+    </None>
+    <None Include="src\src\compat\Release.props">
+      <Filter>src\src\compat</Filter>
+    </None>
+    <None Include="src\src\openvpn\Makefile.am">
+      <Filter>src\src\openvpn</Filter>
+    </None>
+    <None Include="src\src\openvpn\openvpn.manifest">
+      <Filter>src\src\openvpn</Filter>
+    </None>
+    <None Include="src\src\openvpn\openvpn.vcxproj">
+      <Filter>src\src\openvpn</Filter>
+    </None>
+    <None Include="src\src\openvpn\openvpn.vcxproj.filters">
+      <Filter>src\src\openvpn</Filter>
+    </None>
+    <None Include="src\src\openvpn\openvpn_win32_resources.rc">
+      <Filter>src\src\openvpn</Filter>
+    </None>
+    <None Include="src\src\openvpn\vcpkg.json">
+      <Filter>src\src\openvpn</Filter>
+    </None>
+    <None Include="src\src\openvpnmsica\Makefile.am">
+      <Filter>src\src\openvpnmsica</Filter>
+    </None>
+    <None Include="src\src\openvpnmsica\openvpnmsica.props">
+      <Filter>src\src\openvpnmsica</Filter>
+    </None>
+    <None Include="src\src\openvpnmsica\openvpnmsica.vcxproj">
+      <Filter>src\src\openvpnmsica</Filter>
+    </None>
+    <None Include="src\src\openvpnmsica\openvpnmsica.vcxproj.filters">
+      <Filter>src\src\openvpnmsica</Filter>
+    </None>
+    <None Include="src\src\openvpnmsica\openvpnmsica_resources.rc">
+      <Filter>src\src\openvpnmsica</Filter>
+    </None>
+    <None Include="src\src\openvpnmsica\openvpnmsica-Debug.props">
+      <Filter>src\src\openvpnmsica</Filter>
+    </None>
+    <None Include="src\src\openvpnmsica\openvpnmsica-Release.props">
+      <Filter>src\src\openvpnmsica</Filter>
+    </None>
+    <None Include="src\src\openvpnserv\Makefile.am">
+      <Filter>src\src\openvpnserv</Filter>
+    </None>
+    <None Include="src\src\openvpnserv\openvpnserv.vcxproj">
+      <Filter>src\src\openvpnserv</Filter>
+    </None>
+    <None Include="src\src\openvpnserv\openvpnserv.vcxproj.filters">
+      <Filter>src\src\openvpnserv</Filter>
+    </None>
+    <None Include="src\src\openvpnserv\openvpnserv_resources.rc">
+      <Filter>src\src\openvpnserv</Filter>
+    </None>
+    <None Include="src\src\plugins\auth-pam\auth-pam.exports">
+      <Filter>src\src\plugins\auth-pam</Filter>
+    </None>
+    <None Include="src\src\plugins\auth-pam\Makefile.am">
+      <Filter>src\src\plugins\auth-pam</Filter>
+    </None>
+    <None Include="src\src\plugins\auth-pam\README.auth-pam">
+      <Filter>src\src\plugins\auth-pam</Filter>
+    </None>
+    <None Include="src\src\plugins\down-root\down-root.exports">
+      <Filter>src\src\plugins\down-root</Filter>
+    </None>
+    <None Include="src\src\plugins\down-root\Makefile.am">
+      <Filter>src\src\plugins\down-root</Filter>
+    </None>
+    <None Include="src\src\plugins\down-root\README.down-root">
+      <Filter>src\src\plugins\down-root</Filter>
+    </None>
+    <None Include="src\src\plugins\Makefile.am">
+      <Filter>src\src\plugins</Filter>
+    </None>
+    <None Include="src\src\tapctl\Makefile.am">
+      <Filter>src\src\tapctl</Filter>
+    </None>
+    <None Include="src\src\tapctl\tapctl.exe.manifest">
+      <Filter>src\src\tapctl</Filter>
+    </None>
+    <None Include="src\src\tapctl\tapctl.props">
+      <Filter>src\src\tapctl</Filter>
+    </None>
+    <None Include="src\src\tapctl\tapctl.vcxproj">
+      <Filter>src\src\tapctl</Filter>
+    </None>
+    <None Include="src\src\tapctl\tapctl.vcxproj.filters">
+      <Filter>src\src\tapctl</Filter>
+    </None>
+    <None Include="src\src\tapctl\tapctl_resources.rc">
+      <Filter>src\src\tapctl</Filter>
+    </None>
+    <None Include="src\src\Makefile.am">
+      <Filter>src\src</Filter>
+    </None>
+    <None Include="src\tests\unit_tests\engine-key\check_engine_keys.sh">
+      <Filter>src\tests\unit_tests\engine-key</Filter>
+    </None>
+    <None Include="src\tests\unit_tests\engine-key\Makefile.am">
+      <Filter>src\tests\unit_tests\engine-key</Filter>
+    </None>
+    <None Include="src\tests\unit_tests\engine-key\openssl.cnf.in">
+      <Filter>src\tests\unit_tests\engine-key</Filter>
+    </None>
+    <None Include="src\tests\unit_tests\example_test\Makefile.am">
+      <Filter>src\tests\unit_tests\example_test</Filter>
+    </None>
+    <None Include="src\tests\unit_tests\example_test\README.md">
+      <Filter>src\tests\unit_tests\example_test</Filter>
+    </None>
+    <None Include="src\tests\unit_tests\openvpn\Makefile.am">
+      <Filter>src\tests\unit_tests\openvpn</Filter>
+    </None>
+    <None Include="src\tests\unit_tests\plugins\auth-pam\Makefile.am">
+      <Filter>src\tests\unit_tests\plugins\auth-pam</Filter>
+    </None>
+    <None Include="src\tests\unit_tests\plugins\Makefile.am">
+      <Filter>src\tests\unit_tests\plugins</Filter>
+    </None>
+    <None Include="src\tests\unit_tests\Makefile.am">
+      <Filter>src\tests\unit_tests</Filter>
+    </None>
+    <None Include="src\tests\unit_tests\README.md">
+      <Filter>src\tests\unit_tests</Filter>
+    </None>
+    <None Include="src\tests\Makefile.am">
+      <Filter>src\tests</Filter>
+    </None>
+    <None Include="src\tests\t_client.rc-sample">
+      <Filter>src\tests</Filter>
+    </None>
+    <None Include="src\tests\t_client.sh.in">
+      <Filter>src\tests</Filter>
+    </None>
+    <None Include="src\tests\t_cltsrv.sh">
+      <Filter>src\tests</Filter>
+    </None>
+    <None Include="src\tests\t_cltsrv-down.sh">
+      <Filter>src\tests</Filter>
+    </None>
+    <None Include="src\tests\t_lpback.sh">
+      <Filter>src\tests</Filter>
+    </None>
+    <None Include="src\tests\t_net.sh">
+      <Filter>src\tests</Filter>
+    </None>
+    <None Include="src\tests\update_t_client_ips.sh">
+      <Filter>src\tests</Filter>
+    </None>
+    <None Include="src\.gitattributes">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\.git-blame-ignore-revs">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\.gitignore">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\.mailmap">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\.svncommitters">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\.travis.yml">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\AUTHORS">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\ChangeLog">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\Changes.rst">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\compat.m4">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\config-msvc-version.h.in">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\configure.ac">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\CONTRIBUTING.rst">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\COPYING">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\COPYRIGHT.GPL">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\INSTALL">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\Makefile.am">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\NEWS">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\openvpn.sln">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\PORTS">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\README">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\README.ec">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\README.mbedtls">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\README.wolfssl">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\version.m4">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\version.sh.in">
+      <Filter>src</Filter>
+    </None>
+
+  </ItemGroup>
+</Project>
