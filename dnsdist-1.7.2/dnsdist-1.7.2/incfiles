@@ -1,0 +1,26 @@
+#!/bin/sh
+
+export LC_ALL=C.UTF-8
+export LANG=C.UTF-8
+
+if [ -n "$1" ]
+then
+	DIR=$1/
+fi
+
+for a in $(find ${DIR}html -type f | grep -v \~ | sort)
+do
+	c=$(echo $a | sed s:${DIR}html/:: | tr "/.-" "___")
+        echo "static const unsigned char g${c}Data[] = {"
+	od -v -t x1 "$a" | sed  's/^[0-7]*//' | sed 's/\([0-9a-f][0-9a-f]\)/0x\1,/g'
+	echo "};"
+done
+
+echo "static const map<string,string> s_urlmap={"
+for a in $(find ${DIR}html -type f | grep -v \~ | sort)
+do
+	b=$(echo $a | sed s:${DIR}html/::g)
+	c=$(echo $b | tr "/.-" "___")
+	echo "{\"$b\", string((const char*)g${c}Data, sizeof(g${c}Data))},"
+done
+echo "};"

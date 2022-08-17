@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dnsdist-1.7.2">
+      <UniqueIdentifier>{4F1D1E93-3A01-42EC-945F-B92E9997B027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnsdist-1.7.2\builder-support">
+      <UniqueIdentifier>{8C963E22-C2A8-446B-91FF-D403242D090C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnsdist-1.7.2\ext">
+      <UniqueIdentifier>{EA393310-E6C4-417C-AE85-BAF8C07E9E40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnsdist-1.7.2\ext\ipcrypt">
+      <UniqueIdentifier>{AEFEA853-7CB4-43B4-92A4-C29E12C732FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnsdist-1.7.2\ext\json11">
+      <UniqueIdentifier>{F9437D8A-855E-4E01-BB88-FF9B2012BF81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnsdist-1.7.2\ext\libbpf">
+      <UniqueIdentifier>{5B5664D5-6F49-4739-816F-66300FFC65FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnsdist-1.7.2\ext\lmdb-safe">
+      <UniqueIdentifier>{58B72743-0019-4D48-9CC5-65D175ACB761}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnsdist-1.7.2\ext\luawrapper">
+      <UniqueIdentifier>{5C2497DB-41B0-4751-B503-9B4418882F28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnsdist-1.7.2\ext\luawrapper\include">
+      <UniqueIdentifier>{768F6DCD-3934-4CEB-852E-E354E42F5938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnsdist-1.7.2\ext\protozero">
+      <UniqueIdentifier>{1565C491-E9B8-459D-934C-CBCA989758F9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnsdist-1.7.2\ext\protozero\include">
+      <UniqueIdentifier>{B5851C72-1A04-4270-8FE8-443FF1FDC980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnsdist-1.7.2\ext\protozero\include\protozero">
+      <UniqueIdentifier>{CDB6A4A4-6DDE-43D4-8481-A467F4B0F15E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnsdist-1.7.2\ext\yahttp">
+      <UniqueIdentifier>{D0832B6F-9766-4A61-8E46-DCF198C8A1BC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnsdist-1.7.2\ext\yahttp\yahttp">
+      <UniqueIdentifier>{60194A53-27B1-4FD2-9AE9-C99C68960C9D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnsdist-1.7.2\html">
+      <UniqueIdentifier>{E3BFD25E-321D-4D66-8D4E-EC7D1EE93BE0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnsdist-1.7.2\html\js">
+      <UniqueIdentifier>{4F92EB51-7D7A-4F83-AF94-CA3C37C14B55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnsdist-1.7.2\m4">
+      <UniqueIdentifier>{6A5E38CB-C4BA-4A5C-81FC-C0036BF5CA60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dnsdist-1.7.2\src_js">
+      <UniqueIdentifier>{436FD89A-D6E6-46FE-A94E-B3B8C2BA982D}</UniqueIdentifier>
+    </Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dnsdist-1.7.2\ext\ipcrypt\ipcrypt.h">
+      <Filter>dnsdist-1.7.2\ext\ipcrypt</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\json11\json11.hpp">
+      <Filter>dnsdist-1.7.2\ext\json11</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\libbpf\libbpf.h">
+      <Filter>dnsdist-1.7.2\ext\libbpf</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\luawrapper\include\LuaContext.hpp">
+      <Filter>dnsdist-1.7.2\ext\luawrapper\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\basic_pbf_builder.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\basic_pbf_writer.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\buffer_fixed.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\buffer_string.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\buffer_tmpl.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\buffer_vector.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\byteswap.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\config.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\data_view.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\exception.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\iterators.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\pbf_builder.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\pbf_message.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\pbf_reader.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\pbf_writer.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\types.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\varint.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\protozero\include\protozero\version.hpp">
+      <Filter>dnsdist-1.7.2\ext\protozero\include\protozero</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\yahttp\yahttp\cookie.hpp">
+      <Filter>dnsdist-1.7.2\ext\yahttp\yahttp</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\yahttp\yahttp\exception.hpp">
+      <Filter>dnsdist-1.7.2\ext\yahttp\yahttp</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\yahttp\yahttp\reqresp.hpp">
+      <Filter>dnsdist-1.7.2\ext\yahttp\yahttp</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\yahttp\yahttp\router.hpp">
+      <Filter>dnsdist-1.7.2\ext\yahttp\yahttp</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\yahttp\yahttp\url.hpp">
+      <Filter>dnsdist-1.7.2\ext\yahttp\yahttp</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\yahttp\yahttp\utility.hpp">
+      <Filter>dnsdist-1.7.2\ext\yahttp\yahttp</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\yahttp\yahttp\yahttp.hpp">
+      <Filter>dnsdist-1.7.2\ext\yahttp\yahttp</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\ext\yahttp\yahttp\yahttp-config.h">
+      <Filter>dnsdist-1.7.2\ext\yahttp\yahttp</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\dnsdist-lua-ffi-interface.h">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClInclude>
+    <ClInclude Include="dnsdist-1.7.2\htmlfiles.h">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClInclude>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dnsdist-1.7.2\ext\ipcrypt\ipcrypt.c">
+      <Filter>dnsdist-1.7.2\ext\ipcrypt</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\ext\json11\json11.cpp">
+      <Filter>dnsdist-1.7.2\ext\json11</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\ext\lmdb-safe\lmdb-safe.cc">
+      <Filter>dnsdist-1.7.2\ext\lmdb-safe</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\ext\yahttp\yahttp\reqresp.cpp">
+      <Filter>dnsdist-1.7.2\ext\yahttp\yahttp</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\ext\yahttp\yahttp\router.cpp">
+      <Filter>dnsdist-1.7.2\ext\yahttp\yahttp</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\bpf-filter.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\capabilities.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\cdb.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\credentials.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\delaypipe.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\devpollmplexer.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dns.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnscrypt.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-backend.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-cache.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-carbon.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-console.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-dnscrypt.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-dynblocks.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-dynbpf.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-ecs.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-healthchecks.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-idstate.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-kvs.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-lbpolicies.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-lua.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-lua-actions.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-lua-bindings.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-lua-bindings-dnscrypt.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-lua-bindings-dnsquestion.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-lua-bindings-kvs.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-lua-bindings-packetcache.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-lua-bindings-protobuf.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-lua-ffi.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-lua-inspection.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-lua-inspection-ffi.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-lua-rules.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-lua-vars.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-lua-web.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-nghttp2.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-protobuf.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-protocols.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-proxy-protocol.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-rings.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-rules.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-secpoll.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-session-cache.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-snmp.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-svc.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-systemd.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-tcp.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-tcp-downstream.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-web.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsdist-xpf.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnslabeltext.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsname.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnsparser.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnstap.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\dnswriter.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\doh.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\ednscookies.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\ednsoptions.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\ednssubnet.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\epollmplexer.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\fstrm_logger.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\gettime.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\ipcipher.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\iputils.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\kqueuemplexer.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\libssl.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\misc.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\pollmplexer.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\portsmplexer.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\protozero.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\proxy-protocol.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\qtype.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\remote_logger.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\snmp-agent.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\sodcrypto.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\statnode.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\svc-records.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\tcpiohandler.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-base64_cc.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-connectionmanagement_hh.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-credentials_cc.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-delaypipe_hh.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-dnscrypt_cc.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-dnsdist_cc.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-dnsdist-connections-cache.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-dnsdistdynblocks_hh.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-dnsdistkvs_cc.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-dnsdistlbpolicies_cc.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-dnsdistnghttp2_cc.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-dnsdistpacketcache_cc.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-dnsdistrings_cc.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-dnsdistrules_cc.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-dnsdistsvc_cc.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-dnsdisttcp_cc.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-dnsparser_cc.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-iputils_hh.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-luawrapper.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-mplexer.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\test-proxy_protocol_cc.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\testrunner.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\threadname.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\uuid-utils.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+    <ClCompile Include="dnsdist-1.7.2\xpf.cc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </ClCompile>
+
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dnsdist-1.7.2\builder-support\gen-version">
+      <Filter>dnsdist-1.7.2\builder-support</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\ext\ipcrypt\LICENSE">
+      <Filter>dnsdist-1.7.2\ext\ipcrypt</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\ext\ipcrypt\Makefile.am">
+      <Filter>dnsdist-1.7.2\ext\ipcrypt</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\ext\ipcrypt\Makefile.in">
+      <Filter>dnsdist-1.7.2\ext\ipcrypt</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\ext\lmdb-safe\lmdb-safe.hh">
+      <Filter>dnsdist-1.7.2\ext\lmdb-safe</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\ext\yahttp\yahttp\Makefile.am">
+      <Filter>dnsdist-1.7.2\ext\yahttp\yahttp</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\ext\yahttp\yahttp\Makefile.in">
+      <Filter>dnsdist-1.7.2\ext\yahttp\yahttp</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\ext\yahttp\LICENSE">
+      <Filter>dnsdist-1.7.2\ext\yahttp</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\ext\yahttp\Makefile.am">
+      <Filter>dnsdist-1.7.2\ext\yahttp</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\ext\yahttp\Makefile.in">
+      <Filter>dnsdist-1.7.2\ext\yahttp</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\ext\yahttp\README.md">
+      <Filter>dnsdist-1.7.2\ext\yahttp</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\html\js\d3.min.js">
+      <Filter>dnsdist-1.7.2\html\js</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\html\js\jquery.min.js">
+      <Filter>dnsdist-1.7.2\html\js</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\html\js\moment.min.js">
+      <Filter>dnsdist-1.7.2\html\js</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\html\js\rickshaw.min.js">
+      <Filter>dnsdist-1.7.2\html\js</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\html\detail.css">
+      <Filter>dnsdist-1.7.2\html</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\html\graph.css">
+      <Filter>dnsdist-1.7.2\html</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\html\index.html">
+      <Filter>dnsdist-1.7.2\html</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\html\legend.css">
+      <Filter>dnsdist-1.7.2\html</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\html\lines.css">
+      <Filter>dnsdist-1.7.2\html</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\html\local.js">
+      <Filter>dnsdist-1.7.2\html</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\html\powerdns-logo-220px.png">
+      <Filter>dnsdist-1.7.2\html</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\ac_pthread_set_name.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\ax_arg_default_enable_disable.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\ax_check_sign.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\ax_compile_check_sizeof.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\ax_cxx_compile_stdcxx.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\ax_cxx_compile_stdcxx_17.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\ax_python_module.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\boost.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\dnsdist_enable_dnscrypt.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\dnsdist_enable_doh.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\libtool.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\lt~obsolete.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\ltoptions.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\ltsugar.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\ltversion.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_check_cdb.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_check_clock_gettime.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_check_dnstap.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_check_libcrypto.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_check_libedit.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_check_libh2o_evloop.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_check_lmdb.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_check_lua_hpp.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_check_network_libs.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_check_os.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_check_pthread_np.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_check_python_venv.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_check_ragel.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_check_secure_memset.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_check_time_t.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_d_fortify_source.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_enable_sanitizers.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_enable_tls.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_enable_unit_tests.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_param_ssp_buffer_size.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_pie.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_relro.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_stack_protector.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_with_ebpf.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_with_gnutls.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_with_libcap.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_with_libsodium.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_with_libssl.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_with_lua.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_with_net_snmp.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_with_nghttp2.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_with_re2.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\pdns_with_service_user.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\systemd.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\m4\warnings.m4">
+      <Filter>dnsdist-1.7.2\m4</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\src_js\d3.js">
+      <Filter>dnsdist-1.7.2\src_js</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\src_js\jquery.js">
+      <Filter>dnsdist-1.7.2\src_js</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\src_js\moment.js">
+      <Filter>dnsdist-1.7.2\src_js</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\src_js\rickshaw.js">
+      <Filter>dnsdist-1.7.2\src_js</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\src_js\SOURCES">
+      <Filter>dnsdist-1.7.2\src_js</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\aclocal.m4">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\ascii.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\base64.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\bpf-filter.ebpf.src">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\bpf-filter.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\bpf-filter.main.ebpf">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\bpf-filter.qname.ebpf">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\cachecleaner.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\capabilities.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\cdb.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\circular_buffer.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\compile">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\config.guess">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\config.h.in">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\config.sub">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\configure">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\configure.ac">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\connection-management.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\COPYING">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\credentials.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\delaypipe.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\depcomp">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dns.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnscrypt.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist.1">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist.service.in">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-cache.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdistconf.lua">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-console.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-dynblocks.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-dynbpf.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-ecs.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-healthchecks.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-idstate.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-kvs.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-lbpolicies.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-lua.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-lua-ffi.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-lua-ffi-interface.inc">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-lua-inspection-ffi.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\DNSDIST-MIB.txt">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-nghttp2.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-prometheus.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-protobuf.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-protocols.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-proxy-protocol.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-rings.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-rules.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-secpoll.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-session-cache.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-snmp.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-svc.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-systemd.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-tcp.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-tcp-downstream.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-tcp-upstream.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-web.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsdist-xpf.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnslabeltext.rl">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsmessage.proto">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsname.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnsparser.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnstap.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnstap.proto">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dnswriter.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\doh.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\dolog.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\ednscookies.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\ednsoptions.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\ednssubnet.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\fstrm_logger.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\gettime.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\incfiles">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\install-sh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\ipcipher.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\iputils.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\libssl.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\lock.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\ltmain.sh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\lua_hpp.mk">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\Makefile.am">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\Makefile.in">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\misc.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\missing">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\mplexer.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\namespaces.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\noinitvector.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\packetcache.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\pdnsexception.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\protozero.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\proxy-protocol.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\qtype.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\README">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\README.md">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\remote_logger.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\sholder.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\snmp-agent.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\sodcrypto.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\sstuff.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\stat_t.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\statnode.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\svc-records.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\tcpiohandler.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\tcpiohandler-mplexer.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\test-driver">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\threadname.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\uuid-utils.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+    <None Include="dnsdist-1.7.2\xpf.hh">
+      <Filter>dnsdist-1.7.2</Filter>
+    </None>
+
+  </ItemGroup>
+</Project>

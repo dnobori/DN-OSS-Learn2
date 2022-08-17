@@ -1,0 +1,324 @@
+/* config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* This is dnsdist */
+#undef DNSDIST
+
+/* Define to 1 if you have the `accept4' function. */
+#undef HAVE_ACCEPT4
+
+/* Defined if the requested minimum BOOST version is satisfied */
+#undef HAVE_BOOST
+
+/* Define to 1 if you have <boost/test/unit_test.hpp> */
+#undef HAVE_BOOST_TEST_UNIT_TEST_HPP
+
+/* Defined if the Boost unit_test_framework library is available */
+#undef HAVE_BOOST_UNIT_TEST_FRAMEWORK
+
+/* Define to 1 if you have CDB */
+#undef HAVE_CDB
+
+/* Define to 1 if you have the <cdb.h> header file. */
+#undef HAVE_CDB_H
+
+/* Define to 1 if you have clock_gettime */
+#undef HAVE_CLOCK_GETTIME
+
+/* Define to 1 if you have the `crypto_box_curve25519xchacha20poly1305_easy'
+   function. */
+#undef HAVE_CRYPTO_BOX_CURVE25519XCHACHA20POLY1305_EASY
+
+/* Define to 1 if you have the `crypto_box_easy_afternm' function. */
+#undef HAVE_CRYPTO_BOX_EASY_AFTERNM
+
+/* Define to 1 if you have the `CRYPTO_memcmp' function. */
+#undef HAVE_CRYPTO_MEMCMP
+
+/* Define to 1 if you have the `crypto_shorthash' function. */
+#undef HAVE_CRYPTO_SHORTHASH
+
+/* define if the compiler supports basic C++17 syntax */
+#undef HAVE_CXX17
+
+/* Define to 1 if you have the declaration of
+   `h2o_socket_get_ssl_server_name', and to 0 if you don't. */
+#undef HAVE_DECL_H2O_SOCKET_GET_SSL_SERVER_NAME
+
+/* Define to 1 if you have the declaration of `snmp_select_info2', and to 0 if
+   you don't. */
+#undef HAVE_DECL_SNMP_SELECT_INFO2
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#undef HAVE_DLFCN_H
+
+/* Define to 1 if you enable dnscrypt support */
+#undef HAVE_DNSCRYPT
+
+/* Define to 1 if you enable DNS over HTTPS support */
+#undef HAVE_DNS_OVER_HTTPS
+
+/* Define to 1 if you enable DNS over TLS support */
+#undef HAVE_DNS_OVER_TLS
+
+/* Define if using eBPF. */
+#undef HAVE_EBPF
+
+/* Define to 1 if you have the `EVP_MD_CTX_free' function. */
+#undef HAVE_EVP_MD_CTX_FREE
+
+/* Define to 1 if you have the `EVP_MD_CTX_new' function. */
+#undef HAVE_EVP_MD_CTX_NEW
+
+/* Define to 1 if you have EVP_PKEY_CTX_set1_scrypt_salt */
+#undef HAVE_EVP_PKEY_CTX_SET1_SCRYPT_SALT
+
+/* Define to 1 if you have the `explicit_bzero' function. */
+#undef HAVE_EXPLICIT_BZERO
+
+/* Define to 1 if you have the `explicit_memset' function. */
+#undef HAVE_EXPLICIT_MEMSET
+
+/* Define if ASAN fiber annotation interface is available. */
+#undef HAVE_FIBER_SANITIZER
+
+/* Define to 1 if you have libfstrm */
+#undef HAVE_FSTRM
+
+/* Define to 1 if you have the `fstrm_tcp_writer_init' function. */
+#undef HAVE_FSTRM_TCP_WRITER_INIT
+
+/* Define to 1 if you have the `gmtime_r' function. */
+#undef HAVE_GMTIME_R
+
+/* Define to 1 if you have GnuTLS */
+#undef HAVE_GNUTLS
+
+/* Define to 1 if you have the `gnutls_alpn_set_protocols' function. */
+#undef HAVE_GNUTLS_ALPN_SET_PROTOCOLS
+
+/* Define to 1 if you have the `gnutls_memset' function. */
+#undef HAVE_GNUTLS_MEMSET
+
+/* Define to 1 if you have the `gnutls_session_get_verify_cert_status'
+   function. */
+#undef HAVE_GNUTLS_SESSION_GET_VERIFY_CERT_STATUS
+
+/* Define to 1 if you have the `gnutls_session_set_verify_cert' function. */
+#undef HAVE_GNUTLS_SESSION_SET_VERIFY_CERT
+
+/* define to 1 if h2o_socket_get_ssl_server_name is available. */
+#undef HAVE_H2O_SOCKET_GET_SSL_SERVER_NAME
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define to 1 if you have libcap */
+#undef HAVE_LIBCAP
+
+/* Define to 1 if you have OpenSSL libcrypto */
+#undef HAVE_LIBCRYPTO
+
+/* Define to 1 if you have libh2o-evloop */
+#undef HAVE_LIBH2OEVLOOP
+
+/* Define to 1 if you have libsodium */
+#undef HAVE_LIBSODIUM
+
+/* Define to 1 if you have OpenSSL libssl */
+#undef HAVE_LIBSSL
+
+/* Define to 1 if you have the <linux/bpf.h> header file. */
+#undef HAVE_LINUX_BPF_H
+
+/* Define to 1 if you have LMDB */
+#undef HAVE_LMDB
+
+/* Define to 1 if you have the <lmdb.h> header file. */
+#undef HAVE_LMDB_H
+
+/* Define to 1 if you have the `localtime_r' function. */
+#undef HAVE_LOCALTIME_R
+
+/* Define to 1 if you have lua */
+#undef HAVE_LUA
+
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* Define if using Net SNMP. */
+#undef HAVE_NET_SNMP
+
+/* Define to 1 if you have nghttp2 */
+#undef HAVE_NGHTTP2
+
+/* Define to 1 if you have the `OCSP_basic_sign' function. */
+#undef HAVE_OCSP_BASIC_SIGN
+
+/* Define to 1 if you have the `OPENSSL_init_crypto' function. */
+#undef HAVE_OPENSSL_INIT_CRYPTO
+
+/* Define to 1 if you have pthread_getattr_np */
+#undef HAVE_PTHREAD_GETATTR_NP
+
+/* Define to 1 if you have pthread_get_stackaddr_np */
+#undef HAVE_PTHREAD_GET_STACKADDR_NP
+
+/* Define to 1 if you have pthread_get_stacksize_np */
+#undef HAVE_PTHREAD_GET_STACKSIZE_NP
+
+/* Define to 1 if you have the <pthread_np.h> header file. */
+#undef HAVE_PTHREAD_NP_H
+
+/* Define to 1 if you have pthread_setaffinity_np */
+#undef HAVE_PTHREAD_SETAFFINITY_NP
+
+/* 1-arg pthread_setname_np */
+#undef HAVE_PTHREAD_SETNAME_NP_1
+
+/* 2-arg pthread_setname_np */
+#undef HAVE_PTHREAD_SETNAME_NP_2
+
+/* 3-arg pthread_setname_np */
+#undef HAVE_PTHREAD_SETNAME_NP_3
+
+/* 2-arg pthread_set_name_np */
+#undef HAVE_PTHREAD_SET_NAME_NP_2
+
+/* 2-arg void pthread_set_name_np */
+#undef HAVE_PTHREAD_SET_NAME_NP_2_VOID
+
+/* Define to 1 if you have the `randombytes_stir' function. */
+#undef HAVE_RANDOMBYTES_STIR
+
+/* Define to 1 if you have the `RAND_bytes' function. */
+#undef HAVE_RAND_BYTES
+
+/* Define to 1 if you have the `RAND_pseudo_bytes' function. */
+#undef HAVE_RAND_PSEUDO_BYTES
+
+/* Define if using RE2. */
+#undef HAVE_RE2
+
+/* Define to 1 if you have the `recvmmsg' function. */
+#undef HAVE_RECVMMSG
+
+/* Define to 1 if you have the `RSA_get0_key' function. */
+#undef HAVE_RSA_GET0_KEY
+
+/* Define to 1 if you have the <sanitizer/common_interface_defs.h> header
+   file. */
+#undef HAVE_SANITIZER_COMMON_INTERFACE_DEFS_H
+
+/* Define to 1 if __sanitizer_finish_switch_fiber takes only a pointer */
+#undef HAVE_SANITIZER_FINISH_SWITCH_FIBER_SINGLE_PTR
+
+/* Define to 1 if __sanitizer_finish_switch_fiber takes three pointers */
+#undef HAVE_SANITIZER_FINISH_SWITCH_FIBER_THREE_PTRS
+
+/* Define to 1 if you have the `sendmmsg' function. */
+#undef HAVE_SENDMMSG
+
+/* define to 1 if snmp_select_info2 is available. */
+#undef HAVE_SNMP_SELECT_INFO2
+
+/* Define to 1 if you have the `sodium_memcmp' function. */
+#undef HAVE_SODIUM_MEMCMP
+
+/* Define to 1 if you have the `SSL_CTX_get0_privatekey' function. */
+#undef HAVE_SSL_CTX_GET0_PRIVATEKEY
+
+/* Define to 1 if you have the `SSL_CTX_set_alpn_protos' function. */
+#undef HAVE_SSL_CTX_SET_ALPN_PROTOS
+
+/* Define to 1 if you have the `SSL_CTX_set_alpn_select_cb' function. */
+#undef HAVE_SSL_CTX_SET_ALPN_SELECT_CB
+
+/* Define to 1 if you have the `SSL_CTX_set_ciphersuites' function. */
+#undef HAVE_SSL_CTX_SET_CIPHERSUITES
+
+/* Define to 1 if you have the `SSL_CTX_set_keylog_callback' function. */
+#undef HAVE_SSL_CTX_SET_KEYLOG_CALLBACK
+
+/* Define to 1 if you have the `SSL_CTX_set_min_proto_version' function. */
+#undef HAVE_SSL_CTX_SET_MIN_PROTO_VERSION
+
+/* Define to 1 if you have the `SSL_CTX_set_next_proto_select_cb' function. */
+#undef HAVE_SSL_CTX_SET_NEXT_PROTO_SELECT_CB
+
+/* Define to 1 if you have the `SSL_CTX_set_num_tickets' function. */
+#undef HAVE_SSL_CTX_SET_NUM_TICKETS
+
+/* Define to 1 if you have the `SSL_get0_alpn_selected' function. */
+#undef HAVE_SSL_GET0_ALPN_SELECTED
+
+/* Define to 1 if you have the `SSL_get0_next_proto_negotiated' function. */
+#undef HAVE_SSL_GET0_NEXT_PROTO_NEGOTIATED
+
+/* Define to 1 if you have the `SSL_set_hostflags' function. */
+#undef HAVE_SSL_SET_HOSTFLAGS
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Systemd available and enabled */
+#undef HAVE_SYSTEMD
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
+#undef LT_OBJDIR
+
+/* If your OS is so broken that it needs an additional prototype */
+#undef NEED_INET_NTOP_PROTO
+
+/* If POSIX typedefs need to be defined */
+#undef NEED_POSIX_TYPEDEF
+
+/* Name of package */
+#undef PACKAGE
+
+/* Set to the package version used for secpoll */
+#undef PACKAGEVERSION
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* The number of bytes in type time_t */
+#undef SIZEOF_TIME_T
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* Version number of package */
+#undef VERSION
