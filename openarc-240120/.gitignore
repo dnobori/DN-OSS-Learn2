@@ -1,0 +1,59 @@
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+
+# tarballs
+*.tar.gz
+
+# other nonsense
+aclocal.m4
+autom4te.cache
+build-aux
+build-config.h
+build-config.h.in
+configure
+libtool
+Makefile
+Makefile.in
+CONFIG
+config.log
+config.status
+stamp-h1
+.deps/*
+*~
+*.cache
+*#*
+.vscode
+
+# compilation artifacts
+libopenarc/symbols.map
+openarc/.libs/

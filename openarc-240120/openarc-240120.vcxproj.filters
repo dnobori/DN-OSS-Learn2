@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="contrib">
+      <UniqueIdentifier>{BDA90E02-ED52-4B63-9061-C44F9B4A5B8E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\docs">
+      <UniqueIdentifier>{9F5B14CC-6247-45B7-9FFB-FAFEC64B2B52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\init">
+      <UniqueIdentifier>{2C66DBAD-C281-4677-9ADF-6A9ECA5E925E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\init\generic">
+      <UniqueIdentifier>{E2E95D18-B391-45D1-A918-FC26EDC433F7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\init\redhat">
+      <UniqueIdentifier>{143A3D52-F664-4EB5-84DC-F96ACD1DEFF3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\init\solaris">
+      <UniqueIdentifier>{566AD684-D1D4-4F06-BF8E-AB1DE6AA9415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\spec">
+      <UniqueIdentifier>{D1B241FD-EBE1-4277-A486-EC5E8EE30A47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="contrib\systemd">
+      <UniqueIdentifier>{EF4D2ADD-0B09-4F89-AAC2-12787EE74385}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="docs">
+      <UniqueIdentifier>{1EE05D48-0414-41CD-9C26-3FA8E2034170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libopenarc">
+      <UniqueIdentifier>{6E21C3D1-F11A-49F9-AF24-44D192AB923D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libopenarc\docs">
+      <UniqueIdentifier>{CC97B650-2021-4828-A420-7389E9883649}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libopenarc\tests">
+      <UniqueIdentifier>{2E8CF728-66AB-48E8-BC0C-158D1AA9DF41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="m4">
+      <UniqueIdentifier>{22B3CE37-5BA1-4FE4-857F-13A0A6E41DC8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="openarc">
+      <UniqueIdentifier>{08B9FB80-12BA-409A-99C3-DA428A7761A2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="openarc\tests">
+      <UniqueIdentifier>{9D898E4A-6923-4A89-A3EB-D12035F91CCC}</UniqueIdentifier>
+    </Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libopenarc\arc.h">
+      <Filter>libopenarc</Filter>
+    </ClInclude>
+    <ClInclude Include="libopenarc\arc-canon.h">
+      <Filter>libopenarc</Filter>
+    </ClInclude>
+    <ClInclude Include="libopenarc\arc-dns.h">
+      <Filter>libopenarc</Filter>
+    </ClInclude>
+    <ClInclude Include="libopenarc\arc-internal.h">
+      <Filter>libopenarc</Filter>
+    </ClInclude>
+    <ClInclude Include="libopenarc\arc-keys.h">
+      <Filter>libopenarc</Filter>
+    </ClInclude>
+    <ClInclude Include="libopenarc\arc-mailparse.h">
+      <Filter>libopenarc</Filter>
+    </ClInclude>
+    <ClInclude Include="libopenarc\arc-tables.h">
+      <Filter>libopenarc</Filter>
+    </ClInclude>
+    <ClInclude Include="libopenarc\arc-types.h">
+      <Filter>libopenarc</Filter>
+    </ClInclude>
+    <ClInclude Include="libopenarc\arc-util.h">
+      <Filter>libopenarc</Filter>
+    </ClInclude>
+    <ClInclude Include="libopenarc\base64.h">
+      <Filter>libopenarc</Filter>
+    </ClInclude>
+    <ClInclude Include="openarc\config.h">
+      <Filter>openarc</Filter>
+    </ClInclude>
+    <ClInclude Include="openarc\openarc.h">
+      <Filter>openarc</Filter>
+    </ClInclude>
+    <ClInclude Include="openarc\openarc-ar.h">
+      <Filter>openarc</Filter>
+    </ClInclude>
+    <ClInclude Include="openarc\openarc-config.h">
+      <Filter>openarc</Filter>
+    </ClInclude>
+    <ClInclude Include="openarc\openarc-crypto.h">
+      <Filter>openarc</Filter>
+    </ClInclude>
+    <ClInclude Include="openarc\openarc-test.h">
+      <Filter>openarc</Filter>
+    </ClInclude>
+    <ClInclude Include="openarc\util.h">
+      <Filter>openarc</Filter>
+    </ClInclude>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libopenarc\arc.c">
+      <Filter>libopenarc</Filter>
+    </ClCompile>
+    <ClCompile Include="libopenarc\arc-canon.c">
+      <Filter>libopenarc</Filter>
+    </ClCompile>
+    <ClCompile Include="libopenarc\arc-dns.c">
+      <Filter>libopenarc</Filter>
+    </ClCompile>
+    <ClCompile Include="libopenarc\arc-keys.c">
+      <Filter>libopenarc</Filter>
+    </ClCompile>
+    <ClCompile Include="libopenarc\arc-mailparse.c">
+      <Filter>libopenarc</Filter>
+    </ClCompile>
+    <ClCompile Include="libopenarc\arc-tables.c">
+      <Filter>libopenarc</Filter>
+    </ClCompile>
+    <ClCompile Include="libopenarc\arc-util.c">
+      <Filter>libopenarc</Filter>
+    </ClCompile>
+    <ClCompile Include="libopenarc\base64.c">
+      <Filter>libopenarc</Filter>
+    </ClCompile>
+    <ClCompile Include="openarc\config.c">
+      <Filter>openarc</Filter>
+    </ClCompile>
+    <ClCompile Include="openarc\openarc.c">
+      <Filter>openarc</Filter>
+    </ClCompile>
+    <ClCompile Include="openarc\openarc-ar.c">
+      <Filter>openarc</Filter>
+    </ClCompile>
+    <ClCompile Include="openarc\openarc-crypto.c">
+      <Filter>openarc</Filter>
+    </ClCompile>
+    <ClCompile Include="openarc\openarc-test.c">
+      <Filter>openarc</Filter>
+    </ClCompile>
+    <ClCompile Include="openarc\util.c">
+      <Filter>openarc</Filter>
+    </ClCompile>
+
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="contrib\docs\draft-andersen-arc.xml">
+      <Filter>contrib\docs</Filter>
+    </None>
+    <None Include="contrib\docs\draft-andersen-arc-05.txt">
+      <Filter>contrib\docs</Filter>
+    </None>
+    <None Include="contrib\docs\Makefile.am">
+      <Filter>contrib\docs</Filter>
+    </None>
+    <None Include="contrib\init\generic\Makefile.am">
+      <Filter>contrib\init\generic</Filter>
+    </None>
+    <None Include="contrib\init\generic\openarc">
+      <Filter>contrib\init\generic</Filter>
+    </None>
+    <None Include="contrib\init\generic\README">
+      <Filter>contrib\init\generic</Filter>
+    </None>
+    <None Include="contrib\init\redhat\.gitignore">
+      <Filter>contrib\init\redhat</Filter>
+    </None>
+    <None Include="contrib\init\redhat\Makefile.am">
+      <Filter>contrib\init\redhat</Filter>
+    </None>
+    <None Include="contrib\init\redhat\openarc.in">
+      <Filter>contrib\init\redhat</Filter>
+    </None>
+    <None Include="contrib\init\solaris\Makefile.am">
+      <Filter>contrib\init\solaris</Filter>
+    </None>
+    <None Include="contrib\init\solaris\openarc">
+      <Filter>contrib\init\solaris</Filter>
+    </None>
+    <None Include="contrib\init\solaris\openarc.xml">
+      <Filter>contrib\init\solaris</Filter>
+    </None>
+    <None Include="contrib\init\Makefile.am">
+      <Filter>contrib\init</Filter>
+    </None>
+    <None Include="contrib\spec\.gitignore">
+      <Filter>contrib\spec</Filter>
+    </None>
+    <None Include="contrib\spec\Makefile.am">
+      <Filter>contrib\spec</Filter>
+    </None>
+    <None Include="contrib\spec\openarc.spec.in">
+      <Filter>contrib\spec</Filter>
+    </None>
+    <None Include="contrib\systemd\.gitignore">
+      <Filter>contrib\systemd</Filter>
+    </None>
+    <None Include="contrib\systemd\Makefile.am">
+      <Filter>contrib\systemd</Filter>
+    </None>
+    <None Include="contrib\systemd\openarc.service.in">
+      <Filter>contrib\systemd</Filter>
+    </None>
+    <None Include="contrib\Makefile.am">
+      <Filter>contrib</Filter>
+    </None>
+    <None Include="docs\Makefile.am">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="libopenarc\docs\index.html">
+      <Filter>libopenarc\docs</Filter>
+    </None>
+    <None Include="libopenarc\docs\Makefile.am">
+      <Filter>libopenarc\docs</Filter>
+    </None>
+    <None Include="libopenarc\tests\Makefile.am">
+      <Filter>libopenarc\tests</Filter>
+    </None>
+    <None Include="libopenarc\.gitignore">
+      <Filter>libopenarc</Filter>
+    </None>
+    <None Include="libopenarc\Makefile.am">
+      <Filter>libopenarc</Filter>
+    </None>
+    <None Include="libopenarc\openarc.pc.in">
+      <Filter>libopenarc</Filter>
+    </None>
+    <None Include="m4\.gitignore">
+      <Filter>m4</Filter>
+    </None>
+    <None Include="m4\ac_pthread.m4">
+      <Filter>m4</Filter>
+    </None>
+    <None Include="openarc\tests\Makefile.am">
+      <Filter>openarc\tests</Filter>
+    </None>
+    <None Include="openarc\.gitignore">
+      <Filter>openarc</Filter>
+    </None>
+    <None Include="openarc\Makefile.am">
+      <Filter>openarc</Filter>
+    </None>
+    <None Include="openarc\openarc.8.in">
+      <Filter>openarc</Filter>
+    </None>
+    <None Include="openarc\openarc.conf.5.in">
+      <Filter>openarc</Filter>
+    </None>
+    <None Include="openarc\openarc.conf.sample">
+      <Filter>openarc</Filter>
+    </None>
+    <None Include="openarc\openarc.conf.simple.in">
+      <Filter>openarc</Filter>
+    </None>
+
+  </ItemGroup>
+</Project>

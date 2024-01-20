@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{D9138A83-84DA-4A53-AAA5-4B769C2ED1DF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>openarc-240120</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);__KERNEL__</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/libopenarc;$(ProjectDir)/openarc;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="libopenarc\arc.h" />
+    <ClInclude Include="libopenarc\arc-canon.h" />
+    <ClInclude Include="libopenarc\arc-dns.h" />
+    <ClInclude Include="libopenarc\arc-internal.h" />
+    <ClInclude Include="libopenarc\arc-keys.h" />
+    <ClInclude Include="libopenarc\arc-mailparse.h" />
+    <ClInclude Include="libopenarc\arc-tables.h" />
+    <ClInclude Include="libopenarc\arc-types.h" />
+    <ClInclude Include="libopenarc\arc-util.h" />
+    <ClInclude Include="libopenarc\base64.h" />
+    <ClInclude Include="openarc\config.h" />
+    <ClInclude Include="openarc\openarc.h" />
+    <ClInclude Include="openarc\openarc-ar.h" />
+    <ClInclude Include="openarc\openarc-config.h" />
+    <ClInclude Include="openarc\openarc-crypto.h" />
+    <ClInclude Include="openarc\openarc-test.h" />
+    <ClInclude Include="openarc\util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libopenarc\arc.c" />
+    <ClCompile Include="libopenarc\arc-canon.c" />
+    <ClCompile Include="libopenarc\arc-dns.c" />
+    <ClCompile Include="libopenarc\arc-keys.c" />
+    <ClCompile Include="libopenarc\arc-mailparse.c" />
+    <ClCompile Include="libopenarc\arc-tables.c" />
+    <ClCompile Include="libopenarc\arc-util.c" />
+    <ClCompile Include="libopenarc\base64.c" />
+    <ClCompile Include="openarc\config.c" />
+    <ClCompile Include="openarc\openarc.c" />
+    <ClCompile Include="openarc\openarc-ar.c" />
+    <ClCompile Include="openarc\openarc-crypto.c" />
+    <ClCompile Include="openarc\openarc-test.c" />
+    <ClCompile Include="openarc\util.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="contrib\docs\draft-andersen-arc.xml" />
+    <None Include="contrib\docs\draft-andersen-arc-05.txt" />
+    <None Include="contrib\docs\Makefile.am" />
+    <None Include="contrib\init\generic\Makefile.am" />
+    <None Include="contrib\init\generic\openarc" />
+    <None Include="contrib\init\generic\README" />
+    <None Include="contrib\init\redhat\.gitignore" />
+    <None Include="contrib\init\redhat\Makefile.am" />
+    <None Include="contrib\init\redhat\openarc.in" />
+    <None Include="contrib\init\solaris\Makefile.am" />
+    <None Include="contrib\init\solaris\openarc" />
+    <None Include="contrib\init\solaris\openarc.xml" />
+    <None Include="contrib\init\Makefile.am" />
+    <None Include="contrib\spec\.gitignore" />
+    <None Include="contrib\spec\Makefile.am" />
+    <None Include="contrib\spec\openarc.spec.in" />
+    <None Include="contrib\systemd\.gitignore" />
+    <None Include="contrib\systemd\Makefile.am" />
+    <None Include="contrib\systemd\openarc.service.in" />
+    <None Include="contrib\Makefile.am" />
+    <None Include="docs\Makefile.am" />
+    <None Include="libopenarc\docs\index.html" />
+    <None Include="libopenarc\docs\Makefile.am" />
+    <None Include="libopenarc\tests\Makefile.am" />
+    <None Include="libopenarc\.gitignore" />
+    <None Include="libopenarc\Makefile.am" />
+    <None Include="libopenarc\openarc.pc.in" />
+    <None Include="m4\.gitignore" />
+    <None Include="m4\ac_pthread.m4" />
+    <None Include="openarc\tests\Makefile.am" />
+    <None Include="openarc\.gitignore" />
+    <None Include="openarc\Makefile.am" />
+    <None Include="openarc\openarc.8.in" />
+    <None Include="openarc\openarc.conf.5.in" />
+    <None Include="openarc\openarc.conf.sample" />
+    <None Include="openarc\openarc.conf.simple.in" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

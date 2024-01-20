@@ -1,0 +1,20 @@
+# After=network.target nss-lookup.target syslog.target
+
+[Unit]
+Description=Authenticated Resource Chain (ARC) Milter
+Documentation=man:openarc(8) man:openarc.conf(5) http://www.trusteddomain.org/openarc
+After=network.target nss-lookup.target syslog.target
+
+[Service]
+Type=forking
+PIDFile=@localstatedir@/run/openarc/openarc.pid
+EnvironmentFile=-@sysconfdir@/sysconfig/openarc
+ExecStart=@sbindir@/openarc $OPTIONS
+ExecReload=/bin/kill -USR1 $MAINPID
+User=openarc
+Group=openarc
+PermissionsStartOnly=true
+ExecStartPre=-/usr/bin/install -d -m 0755 -o openarc -g openarc @localstatedir@/run/openarc
+
+[Install]
+WantedBy=multi-user.target
